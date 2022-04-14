@@ -34,7 +34,7 @@
       "git add"
     ],
     "./**/*.{js,jsx,json,css,scss}": [
-      "prettier --write",
+      "pnpm format",
       "git add"
     ]
   }
