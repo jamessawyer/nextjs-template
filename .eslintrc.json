@@ -1,3 +1,46 @@
 {
-  "extends": "next/core-web-vitals"
+  "parser": "@babel/eslint-parser",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "next",
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-console": "off",
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/namespace": 0,
+    "import/no-named-as-default": 0,
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "import/default": 0,
+    "no-unused-vars": 1,
+    "no-var": 1,
+    "no-plusplus": 0
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true,
+    "ecmaFeatures": {
+      "globalReturn": false
+    }
+  }
 }

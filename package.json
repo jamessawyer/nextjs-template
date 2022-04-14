@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "eslint": "eslint --fix .",
+    "format": "prettier --config .prettierrc --write \"./**/*.{js,ts,jsx,tsx,css}\"",
+    "prettier:diff": "prettier --config .prettierrc --list-different \"./**/*.{js,ts,jsx,tsx,css}\""
   },
   "dependencies": {
     "next": "12.1.5",
@@ -14,7 +17,13 @@
     "react-dom": "18.0.0"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
     "eslint": "8.13.0",
-    "eslint-config-next": "12.1.5"
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "12.1.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "prettier": "2.6.2"
   }
 }
