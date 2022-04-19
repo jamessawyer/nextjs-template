@@ -9,17 +9,16 @@
     "next",
     "airbnb",
     "plugin:react/recommended",
-    "plugin:import/resolver",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "prettier",
+    "plugin:import/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["react", "prettier"],
+  "plugins": ["react"],
   "rules": {
-    "prettier/prettier": ["error"],
     "no-console": "off",
     "import/no-extraneous-dependencies": 0,
+    "import/namespace": 2,
+    "import/no-named-as-default": 0,
+    "import/default": 0,
     "react/jsx-filename-extension": [
       "warn",
       {
@@ -28,11 +27,8 @@
     ],
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "import/namespace": 0,
-    "import/no-named-as-default": 0,
     "react/prop-types": 0,
     "react/jsx-props-no-spreading": 0,
-    "import/default": 0,
     "no-unused-vars": 1,
     "no-var": 1,
     "no-plusplus": 0
@@ -48,11 +44,13 @@
     "import/resolver": {
       "alias": {
         "map": [
-          ["@/components", "./components/"],
-          ["@/libs", "./libs/"]
+          ["@/public", "./public"],
+          ["@/components/*", "./components/*"],
+          ["@/libs/*", "./libs/*"]
         ],
         "extensions": [".js", ".jsx"]
       }
-    }
+    },
+    "import/extensions": [".js", ".jsx"]
   }
 }
