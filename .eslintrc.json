@@ -9,6 +9,7 @@
     "next",
     "airbnb",
     "plugin:react/recommended",
+    "plugin:import/resolver",
     "plugin:import/errors",
     "plugin:import/warnings",
     "prettier",
@@ -41,6 +42,17 @@
     "allowImportExportEverywhere": true,
     "ecmaFeatures": {
       "globalReturn": false
+    }
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@/components", "./components/"],
+          ["@/libs", "./libs/"]
+        ],
+        "extensions": [".js", ".jsx"]
+      }
     }
   }
 }
