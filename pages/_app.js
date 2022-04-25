@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { NextIntlProvider, IntlErrorCode } from 'next-intl'
 import '../styles/globals.css'
+import PageLayout from '../components/PageLayout'
 
 function onError(error) {
   if (error.code === IntlErrorCode.MISSING_MESSAGE) {
@@ -34,7 +35,9 @@ function MyApp({ Component, pageProps }) {
         <title>{Component.title || 'AI Lab'}</title>
         <meta name="description" content={Component.description || ''} />
       </Head>
-      <Component {...pageProps} />
+      <PageLayout>
+        <Component {...pageProps} />
+      </PageLayout>
     </NextIntlProvider>
   )
 }
