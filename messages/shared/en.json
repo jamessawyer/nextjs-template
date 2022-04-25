@@ -6,5 +6,9 @@
     "domain": "Domain",
     "apply": "Apply",
     "lang": "English"
+  },
+  "Contact": {
+    "organization": "Constituent bodies:",
+    "info": "Contact Us:"
   }
 }

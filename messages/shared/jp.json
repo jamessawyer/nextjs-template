@@ -6,5 +6,9 @@
     "domain": "分野",
     "apply": "申し込み",
     "lang": "日本語"
+  },
+  "Contact": {
+    "organization": "機構を構成する",
+    "info": "我々に連絡する"
   }
 }
