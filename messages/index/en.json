@@ -2,5 +2,10 @@
   "Index": {
     "title": "Home Page",
     "gallery-button": "Deep reinforcement learning"
+  },
+  "Apply": {
+    "title": "HUST AI II Introduction",
+    "content": "Huake Artificial Intelligence Innovation Center is an artificial intelligence based on Huazhong University of Science and Technology and its international friend schools.Artificial intelligence jointly established by high-level scholars in basic research and application scenario research in the research field Advanced Institute.",
+    "button": "APPLY"
   }
 }
