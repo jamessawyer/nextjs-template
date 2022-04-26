@@ -8,3 +8,27 @@
     @apply font-medium text-[28px] tracking-wider text-[#E5e6e6];
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gallery-dots.slick-dots {
+  bottom: 44px;
+}
+
+.gallery-dots.slick-dots li {
+  margin: 0 15px;
+}
+
+
+.gallery-dots.slick-dots li button:before {
+  color: #fff;
+  opacity: 1;
+  font-size: 20px;
+}
+
+.gallery-dots.slick-dots li.slick-active button:before {
+  color: #972F17;
+  opacity: 1;
+}
