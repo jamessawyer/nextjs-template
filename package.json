@@ -16,6 +16,7 @@
     "next": "12.1.5",
     "next-intl": "^2.6.0",
     "react": "18.0.0",
+    "react-awesome-reveal": "^3.8.1",
     "react-dom": "18.0.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"
