@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl'
-import { Fade } from 'react-awesome-reveal'
+import { Fade, Zoom } from 'react-awesome-reveal'
 import Image from 'next/image'
 import DomainTag1 from '../public/images/home/domain-tag-1.png'
 import DomainTag2 from '../public/images/home/domain-tag-2.png'
@@ -63,26 +63,30 @@ export default function Domain() {
       <Fade direction="up" cascade className="flex flex-col ml-4">
         <h1 className="font-semibold text-6xl text-[#0E204E]">{t('title')}</h1>
         <h2 className="font-semibold text-6xl text-[#0E204E] mt-5 mb-2">{t('subtitle')}</h2>
-        <p className="font-normal text-xl text-[#263238] opacity-80 mt-3.5 mb-20">
+        <p className="max-w-4xl font-normal text-xl text-[#263238] opacity-80 mt-3.5 mb-20">
           {t('description')}
         </p>
       </Fade>
-      <div className="flex flex-row justify-between items-center">
-        <div
-          className="relative w-142 h-148
-          after:content-[''] after:w-52 after:h-89.5 after:bg-[#0E204E]
-          after:absolute -after:right-full after:top-1/2 after:-translate-y-1/2">
-          <Image src={DomainCard1} alt="" />
-        </div>
+      <div className="flex flex-row justify-between items-center gap-x-94">
+        <Zoom>
+          <div
+            className="relative w-142 h-148
+              after:content-[''] after:w-52 after:h-89.5 after:bg-[#0E204E]
+              after:absolute -after:right-full after:top-1/2 after:-translate-y-1/2">
+            <Image src={DomainCard1} alt="" />
+          </div>
+        </Zoom>
         <TagList tags={TAGS.slice(0, 3)} />
       </div>
-      <div className="flex flex-row-reverse justify-between items-center">
-        <div
-          className="relative w-142 h-148 grow-0
-        after:content-[''] after:w-52 after:h-89.5 after:bg-[#0E204E]
-        after:absolute after:-left-52 after:top-1/2 after:-translate-y-1/2">
-          <Image src={DomainCard2} alt="" />
-        </div>
+      <div className="flex flex-row-reverse justify-between items-center gap-x-94">
+        <Zoom>
+          <div
+            className="relative w-142 h-148 grow-0
+              after:content-[''] after:w-52 after:h-89.5 after:bg-[#0E204E]
+              after:absolute after:-left-52 after:top-1/2 after:-translate-y-1/2">
+            <Image src={DomainCard2} alt="" />
+          </div>
+        </Zoom>
         <TagList tags={TAGS.slice(3)} />
       </div>
     </section>
