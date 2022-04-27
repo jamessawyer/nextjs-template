@@ -29,7 +29,7 @@ export default function ImageCarousel() {
         <div className="h-139 w-full bg-[url('/images/home/banner-2.png')] bg-cover bg-center" />
         <div className="h-139 w-full bg-[url('/images/home/banner-3.png')] bg-cover bg-center" />
       </Slider>
-      <div className="absolute left-0 bottom-16 bg-[#0c3655] bg-opacity-60">
+      <div className="absolute left-0 bottom-16 bg-[#0c3655] bg-opacity-60 hover:bg-opacity-80 transition-all">
         <Link href={{ pathname: '/deep' }} locale={currentLocal}>
           <a
             className="
@@ -39,6 +39,7 @@ export default function ImageCarousel() {
             <p
               className="
               font-semibold text-[#E5E5E5] text-2xl max-w-[305px]
+              hover:text-white
               2xl:text-xl 2xl:max-w-[190px]
               ">
               {t('gallery-button')}
