@@ -18,5 +18,16 @@
     "tag4": "industrial manufacturing",
     "tag5": "digital content",
     "tag6": "Pan entertainment"
+  },
+  "News": {
+    "title": "NEWS",
+    "subtitle1": "Fire emergency rescue",
+    "subtitle2": "Data Analysis Application",
+    "content1": "High adaptive sensing equipment and disaster source location technology for urban fire, explosion and integrated pipe gallery accidents",
+    "content2": "Study on imaging method of multi-component gas concentration field based on acoustic velocity dispersion",
+    "content3": "Research on intelligent fault diagnosis and leak monitoring of natural gas station based on audio signal",
+    "content4": "Research on defect detection technology and diagnosis method of high voltage Shunt Reactor based on acoustic vibration signal",
+    "content5": "Research on GIS equipment handover acceptance and mechanical status detection and diagnosis technology during operation",
+    "button": "learn more"
   }
 }
