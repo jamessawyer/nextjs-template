@@ -12,7 +12,7 @@ export default function Footer() {
   const { locale: currentLocal } = useRouter()
 
   return (
-    <footer className="w-full h-97 bg-[url('/images/footer/bg.png')] bg-cover bg-center flex flex-row justify-center gap-x-28">
+    <footer className="w-full h-97 bg-[url('/images/footer/bg.png')] bg-cover bg-bottom-center flex flex-row justify-center gap-x-28">
       <div className="mt-16">
         <div className="w-94 relative">
           <Image src={LOGOS[currentLocal]} alt="HUST AI" priority />
