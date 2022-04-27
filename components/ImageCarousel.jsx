@@ -3,25 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Slider from 'react-slick'
-import Banner1 from '../public/images/home/banner-1.png'
-import Banner2 from '../public/images/home/banner-2.png'
-import Banner3 from '../public/images/home/banner-3.png'
 import RightArrow from '../public/images/right-arrow.png'
-
-const IMAGES = [
-  {
-    id: 1,
-    src: Banner1,
-  },
-  {
-    id: 2,
-    src: Banner2,
-  },
-  {
-    id: 3,
-    src: Banner3,
-  },
-]
 
 const settings = {
   dots: true,
@@ -41,13 +23,11 @@ export default function ImageCarousel() {
   const { locale: currentLocal } = useRouter()
 
   return (
-    <section className="w-full h-140 overflow-hidden relative">
+    <section className="w-full h-139 overflow-hidden relative">
       <Slider {...settings}>
-        {IMAGES.map(({ id, src }) => (
-          <div className="relative h-full" key={id}>
-            <Image src={src} alt="" />
-          </div>
-        ))}
+        <div className="h-139 w-full bg-[url('/images/home/banner-1.png')] bg-cover bg-center" />
+        <div className="h-139 w-full bg-[url('/images/home/banner-2.png')] bg-cover bg-center" />
+        <div className="h-139 w-full bg-[url('/images/home/banner-3.png')] bg-cover bg-center" />
       </Slider>
       <div className="absolute left-0 bottom-16 bg-[#0c3655] bg-opacity-60">
         <Link href={{ pathname: '/deep' }} locale={currentLocal}>

@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
   .nav-text {
-    @apply font-medium text-[28px] tracking-wider text-[#E5e6e6];
+    @apply font-medium text-2.5xl tracking-wider text-[#E5e6e6];
   }
 }
 
