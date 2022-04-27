@@ -20,7 +20,7 @@ export default function News() {
         <h3 className="text-4xl text-white">{t('subtitle2')}</h3>
       </div>
       <div className="w-296.5 h-158.5 flex flex-row bg-white self-end overflow-hidden">
-        <ul className="w-119.25 h-full shadow-[0px_4px_25px_5px_rgba(0,0,0,0.1)] px-25.25 py-26.5 overflow-y-auto">
+        <ul className="w-119.25 h-full shadow-[0px_4px_25px_5px_rgba(0,0,0,0.1)] px-25.25 py-26.5 overflow-y-auto scrollbar-thin scrollbar-thumb-sky-200 scrollbar-track-gray-100">
           <li
             className="text-xl text-[#0E204E] relative
             before:content-[''] before:w-2.5 before:h-2.5 before:rounded-full before:bg-[#C4C4C4] before:absolute before:-left-6 before:top-2">
