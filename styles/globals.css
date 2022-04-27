@@ -8,12 +8,6 @@
   }
 }
 
-@media screen(2xl) {
-  .nav-text {
-    @apply text-xl;
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -36,4 +30,14 @@ html {
 .gallery-dots.slick-dots li.slick-active button:before {
   color: #972F17;
   opacity: 1;
+}
+
+@media screen(2xl) {
+  .nav-text {
+    @apply text-xl;
+  }
+
+  .gallery-dots.slick-dots li button:before {
+    font-size: 14px;
+  }
 }

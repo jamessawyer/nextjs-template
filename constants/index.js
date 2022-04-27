@@ -12,4 +12,5 @@ export const LANGS = {
 export const LOGOS = {
   zh: LogoCN,
   en: LogoEN,
+  jp: LogoEN,
 }
