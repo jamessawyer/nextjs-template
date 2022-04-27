@@ -8,6 +8,12 @@
   }
 }
 
+@media screen(2xl) {
+  .nav-text {
+    @apply text-xl;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
