@@ -7,5 +7,16 @@
     "title": "HUST AI II Introduction",
     "content": "Huake Artificial Intelligence Innovation Center is an artificial intelligence based on Huazhong University of Science and Technology and its international friend schools.Artificial intelligence jointly established by high-level scholars in basic research and application scenario research in the research field Advanced Institute.",
     "button": "APPLY"
+  },
+  "Domain": {
+    "title": "HUST AI II",
+    "subtitle": "Current research directions and fields",
+    "description": "Combining the advantages of R&D, industry, talents, innovation resources, etc., we will expand artificial intelligence technology in the following industries",
+    "tag1": "city fire",
+    "tag2": "health care",
+    "tag3": "Distributed storage",
+    "tag4": "industrial manufacturing",
+    "tag5": "digital content",
+    "tag6": "Pan entertainment"
   }
 }
