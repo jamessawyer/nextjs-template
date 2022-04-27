@@ -59,31 +59,64 @@ const TAGS = [
 export default function Domain() {
   const t = useTranslations('Domain')
   return (
-    <section id="domain" className="bg-[#E5E5E5] pt-26.5 px-45 pb-40">
+    <section
+      id="domain"
+      className="
+      bg-[#E5E5E5] pt-26.5 px-45 pb-40
+        2xl:pt-20 2xl:px-32 2xl:pb-28
+    ">
       <Fade direction="up" cascade className="flex flex-col ml-4">
-        <h1 className="font-semibold text-6xl text-[#0E204E]">{t('title')}</h1>
-        <h2 className="font-semibold text-6xl text-[#0E204E] mt-5 mb-2">{t('subtitle')}</h2>
-        <p className="max-w-4xl font-normal text-xl text-[#263238] opacity-80 mt-3.5 mb-20">
+        <h1
+          className="
+            font-semibold text-6xl text-[#0E204E]
+            2xl:text-5xl
+          ">
+          {t('title')}
+        </h1>
+        <h2
+          className="
+            font-semibold text-6xl text-[#0E204E] mt-5 mb-2
+            2xl:text-5xl
+        ">
+          {t('subtitle')}
+        </h2>
+        <p
+          className="
+          max-w-4xl font-normal text-xl text-[#263238] opacity-80 mt-3.5 mb-20
+          2xl:text-lg
+          ">
           {t('description')}
         </p>
       </Fade>
-      <div className="flex flex-row justify-between items-center gap-x-94">
+      <div
+        className="
+        flex flex-row justify-between items-center gap-x-94
+        2xl:gap-x-60
+        ">
         <Zoom>
           <div
             className="relative w-142 h-148
               after:content-[''] after:w-52 after:h-89.5 after:bg-[#0E204E]
-              after:absolute -after:right-full after:top-1/2 after:-translate-y-1/2">
+              after:absolute -after:right-full after:top-1/2 after:-translate-y-1/2
+              2xl:w-96 2xl:h-100 2xl:after:w-24 2xl:after:h-56
+              ">
             <Image src={DomainCard1} alt="" />
           </div>
         </Zoom>
         <TagList tags={TAGS.slice(0, 3)} />
       </div>
-      <div className="flex flex-row-reverse justify-between items-center gap-x-94">
+      <div
+        className="
+        flex flex-row-reverse justify-between items-center gap-x-94
+        2xl:gap-x-60
+      ">
         <Zoom>
           <div
             className="relative w-142 h-148 grow-0
               after:content-[''] after:w-52 after:h-89.5 after:bg-[#0E204E]
-              after:absolute after:-left-52 after:top-1/2 after:-translate-y-1/2">
+              after:absolute after:-left-52 after:top-1/2 after:-translate-y-1/2
+              2xl:w-96 2xl:h-100 2xl:after:w-24 2xl:after:h-56 2xl:after:-left-24
+              ">
             <Image src={DomainCard2} alt="" />
           </div>
         </Zoom>
