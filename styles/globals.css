@@ -32,6 +32,18 @@ html {
   opacity: 1;
 }
 
+html[lang="en"] header + main {
+  margin-top: 225px;
+}
+
+html[lang="zh"] header + main {
+  margin-top: 225px;
+}
+
+#institution, #scholar, #news, #domain {
+  scroll-margin-top: 225px;
+}
+
 @media screen(2xl) {
   .nav-text {
     @apply text-xl;
@@ -39,5 +51,17 @@ html {
 
   .gallery-dots.slick-dots li button:before {
     font-size: 14px;
+  }
+
+  html[lang="en"] header + main {
+    margin-top: 164px;
+  }
+  
+  html[lang="zh"] header + main {
+    margin-top: 164px;
+  }
+  
+  #institution, #scholar, #news, #domain {
+    scroll-margin-top: 164px;
   }
 }
