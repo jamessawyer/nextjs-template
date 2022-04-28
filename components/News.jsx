@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import NewsCard from '../public/images/home/news-card.png'
 
@@ -47,8 +48,18 @@ export default function News() {
             {t('content5')}
           </li>
         </ul>
-        <div className="relative">
-          <Image src={NewsCard} alt="" />
+        <div className="relative grow">
+          <Image src={NewsCard} layout="fill" alt="" />
+          <Link href={{ pathname: '/news' }} locale={currentLocal}>
+            <a
+              className="
+                absolute left-0 bottom-[75px] py-6 px-16 text-xs text-[#333333] tracking-[.2em]  bg-white flex flex-row items-center gap-x-4
+                hover:bg-[#000] hover:text-white transition-all
+            ">
+              <span>{t('button')}</span>
+              <span className="text-lg">→</span>
+            </a>
+          </Link>
         </div>
       </div>
     </section>
