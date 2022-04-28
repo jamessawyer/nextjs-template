@@ -12,7 +12,7 @@ export default function News() {
     <section
       id="news"
       className="w-full h-188.5 
-        bg-[#E5E5E5] bg-[url('/images/home/news-bg.png')] bg-[length:100%_44.25rem] bg-left-top
+        bg-white bg-[url('/images/home/news-bg.png')] bg-[length:100%_44.25rem] bg-left-top
         bg-no-repeat
         flex flex-row justify-center items-center gap-x-21.5
         2xl:h-158.5 2xl:gap-x-16 2xl:bg-[length:100%_39.625rem]
@@ -44,7 +44,7 @@ export default function News() {
       </div>
       <div
         className="
-        w-296.5 h-158.5 flex flex-row bg-white self-end overflow-hidden
+        w-296.5 h-158.5 flex flex-row bg-white self-end
         2xl:w-248 2xl:h-132.5
         ">
         <ul
