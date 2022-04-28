@@ -2,6 +2,7 @@ import ImageCarousel from '../components/ImageCarousel'
 import ApplyIntro from '../components/ApplyIntro'
 import Domain from '../components/Domain'
 import News from '../components/News'
+import ScholarCarousel from '../components/ScholarCarousel'
 
 export default function Home() {
   return (
@@ -10,8 +11,7 @@ export default function Home() {
       <ApplyIntro />
       <Domain />
       <News />
-      <div className="h-[100vh] w-full bg-orange-400" />
-      <div id="scholar" className="h-[100vh] w-full bg-green-400" />
+      <ScholarCarousel />
     </>
   )
 }
