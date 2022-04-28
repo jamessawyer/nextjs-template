@@ -23,7 +23,7 @@ export default function ImageCarousel() {
   const { locale: currentLocal } = useRouter()
 
   return (
-    <section className="w-full h-139 overflow-hidden relative">
+    <section id="institution" className="w-full h-139 overflow-hidden relative">
       <Slider {...settings}>
         <div className="h-139 w-full bg-[url('/images/home/banner-1.png')] bg-cover bg-center" />
         <div className="h-139 w-full bg-[url('/images/home/banner-2.png')] bg-cover bg-center" />

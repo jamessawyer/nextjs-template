@@ -26,9 +26,9 @@ export default function Navigation() {
             </li>
             <div className="w-px h-5 bg-[#D9E0E6] opacity-30" />
             <li className="px-9 py-16 nav-text 2xl:px-8 2xl:py-12">
-              <Link href={{ pathname: '/news', query }} as={asPath} locale={currentLocal}>
-                <a className="opacity-80 hover:opacity-100">{t('news')}</a>
-              </Link>
+              <a className="opacity-80 hover:opacity-100" href="#news">
+                {t('news')}
+              </a>
             </li>
             <div className="w-px h-5 bg-[#D9E0E6] opacity-30" />
             <li className="px-9 py-16 nav-text 2xl:px-8 2xl:py-12">
