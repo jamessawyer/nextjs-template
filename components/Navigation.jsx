@@ -10,7 +10,7 @@ export default function Navigation() {
   console.log('Navigation locale: ', currentLocal)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-10">
+    <header className="sticky top-0 left-0 right-0 z-10">
       <section className="w-full h-15 bg-[#112541] 2xl:h-10" />
       <section className="flex flex-row justify-between items-center bg-[#1A487F] pl-44 pr-28 2xl:pl-28">
         <div className="w-94 relative 2xl:w-60">
