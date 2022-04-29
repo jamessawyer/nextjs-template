@@ -1,46 +1,68 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 import { useRouter } from 'next/router'
+import { useCallback, useState } from 'react'
 import { LOGOS, LANGS } from '../constants'
+
+function ScrollAnchor({ to, children, first = false, onSetInactive = () => null }) {
+  return (
+    <ScrollLink
+      activeClass="!opacity-100"
+      to={to}
+      smooth="linear"
+      delay={0}
+      spy
+      offset={-164}
+      duration={150}
+      onSetInactive={onSetInactive}
+      className={`opacity-80 hover:opacity-100 ${first && 'opacity-100'}`}>
+      {children}
+    </ScrollLink>
+  )
+}
 
 export default function Navigation() {
   const t = useTranslations('Navigation')
   const { locale: currentLocal, locales, pathname, query, asPath } = useRouter()
-  console.log('Navigation locale: ', currentLocal)
+
+  const [isFirst, setIsFirst] = useState(true)
+
+  const onSetInactive = useCallback(() => {
+    setIsFirst(false)
+  }, [])
 
   return (
     <header className="sticky top-0 left-0 right-0 z-10">
       <section className="w-full h-15 bg-[#112541] 2xl:h-10" />
       <section className="flex flex-row justify-between items-center bg-[#1A487F] pl-44 pr-28 2xl:pl-28">
-        <div className="w-94 relative 2xl:w-60">
+        <div
+          className="w-94 relative 2xl:w-60 cursor-pointer"
+          onClick={() => scroll.scrollToTop({ delay: 0, duration: 150 })}>
           <Image src={LOGOS[currentLocal]} alt="HUST AI" priority />
         </div>
 
         <nav>
           <ul className="flex flex-row justify-between items-center cursor-pointer">
             <li className="pr-9 py-16 nav-text 2xl:pr-8 2xl:py-12">
-              <a className="opacity-80 hover:opacity-100" href="#institution">
+              <ScrollAnchor to="institution" first={isFirst} onSetInactive={onSetInactive}>
                 {t('institution')}
-              </a>
+              </ScrollAnchor>
             </li>
             <div className="w-px h-5 bg-[#D9E0E6] opacity-30" />
             <li className="px-9 py-16 nav-text 2xl:px-8 2xl:py-12">
-              <a className="opacity-80 hover:opacity-100" href="#news">
-                {t('news')}
-              </a>
+              <ScrollAnchor to="news">{t('news')}</ScrollAnchor>
             </li>
             <div className="w-px h-5 bg-[#D9E0E6] opacity-30" />
             <li className="px-9 py-16 nav-text 2xl:px-8 2xl:py-12">
-              <a className="opacity-80 hover:opacity-100" href="#scholar">
-                {t('scholar')}
-              </a>
+              <ScrollAnchor to="scholar">{t('scholar')}</ScrollAnchor>
             </li>
             <div className="w-px h-5 bg-[#D9E0E6] opacity-30" />
             <li className="px-9 py-16 nav-text 2xl:px-8 2xl:py-12">
-              <a className="opacity-80 hover:opacity-100" href="#domain">
-                {t('domain')}
-              </a>
+              <ScrollAnchor to="domain">{t('domain')}</ScrollAnchor>
             </li>
             <div className="w-px h-5 bg-[#D9E0E6] opacity-30" />
             <li className="px-9 py-16 nav-text 2xl:px-8 2xl:py-12">
