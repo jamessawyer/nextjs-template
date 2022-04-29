@@ -1,10 +1,11 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import { memo } from 'react'
 import { Slide } from 'react-awesome-reveal'
 import ApplyCard from '../public/images/home/apply-card.png'
 import useStore, { selectToggleOpen } from '../utils/useStore'
 
-export default function ApplyIntro() {
+function ApplyIntro() {
   const t = useTranslations('Apply')
 
   const toggleOpen = useStore(selectToggleOpen)
@@ -52,3 +53,5 @@ export default function ApplyIntro() {
     </section>
   )
 }
+
+export default memo(ApplyIntro)

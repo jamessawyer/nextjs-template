@@ -2,10 +2,11 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { memo } from 'react'
 import { Fade } from 'react-awesome-reveal'
 import NewsCard from '../public/images/home/news-card.png'
 
-export default function News() {
+function News() {
   const t = useTranslations('News')
   const { locale: currentLocal } = useRouter()
   return (
@@ -98,3 +99,5 @@ export default function News() {
     </section>
   )
 }
+
+export default memo(News)

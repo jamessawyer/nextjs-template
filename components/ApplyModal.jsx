@@ -2,6 +2,7 @@ import Modal from 'react-modal'
 import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
+import { memo } from 'react'
 import { MODAL_LOGOS } from '../constants'
 import useStore, { selectOpen, selectToggleOpen } from '../utils/useStore'
 import CloseIcon from '../public/images/close.png'
@@ -22,7 +23,7 @@ const customStyles = {
 }
 Modal.setAppElement('#__next')
 
-export default function ApplyModal() {
+function ApplyModal() {
   const isOpen = useStore(selectOpen)
   const toggleOpen = useStore(selectToggleOpen)
   const t = useTranslations('Modal')
@@ -56,3 +57,4 @@ export default function ApplyModal() {
     </Modal>
   )
 }
+export default memo(ApplyModal)

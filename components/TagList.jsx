@@ -18,7 +18,7 @@ function Tag({ src, title, width, height, delay }) {
 
 const MemoedTag = memo(Tag)
 
-export default function TagList({ tags }) {
+function TagList({ tags }) {
   const t = useTranslations('Domain')
   return (
     <div className="flex flex-row justify-between grow">
@@ -35,3 +35,4 @@ export default function TagList({ tags }) {
     </div>
   )
 }
+export default memo(TagList)

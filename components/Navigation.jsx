@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 import { useRouter } from 'next/router'
-import { useCallback, useState } from 'react'
+import { memo, useCallback, useState } from 'react'
 import { LOGOS, LANGS } from '../constants'
 import useStore, { selectToggleOpen } from '../utils/useStore'
 
@@ -26,7 +26,7 @@ function ScrollAnchor({ to, children, first = false, onSetInactive = () => null 
   )
 }
 
-export default function Navigation() {
+function Navigation() {
   const t = useTranslations('Navigation')
   const { locale: currentLocal, locales, pathname, query, asPath } = useRouter()
 
@@ -112,3 +112,5 @@ export default function Navigation() {
     </header>
   )
 }
+
+export default memo(Navigation)

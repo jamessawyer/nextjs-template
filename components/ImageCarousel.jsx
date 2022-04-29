@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { memo } from 'react'
 import Slider from 'react-slick'
 import RightArrow from '../public/images/right-arrow.png'
 
@@ -18,7 +19,7 @@ const settings = {
   dotsClass: 'slick-dots gallery-dots',
 }
 
-export default function ImageCarousel() {
+function ImageCarousel() {
   const t = useTranslations('Index')
   const { locale: currentLocal } = useRouter()
 
@@ -53,3 +54,5 @@ export default function ImageCarousel() {
     </section>
   )
 }
+
+export default memo(ImageCarousel)

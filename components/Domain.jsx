@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { Fade, Zoom } from 'react-awesome-reveal'
 import Image from 'next/image'
+import { memo } from 'react'
 import DomainTag1 from '../public/images/home/domain-tag-1.png'
 import DomainTag2 from '../public/images/home/domain-tag-2.png'
 import DomainTag3 from '../public/images/home/domain-tag-3.png'
@@ -56,7 +57,7 @@ const TAGS = [
   },
 ]
 
-export default function Domain() {
+function Domain() {
   const t = useTranslations('Domain')
   return (
     <section
@@ -125,3 +126,5 @@ export default function Domain() {
     </section>
   )
 }
+
+export default memo(Domain)
