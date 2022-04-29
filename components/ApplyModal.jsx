@@ -48,7 +48,7 @@ export default function ApplyModal() {
           <span className="text-[#972F17]">aiii@aifun.com</span>
         </p>
       </div>
-      <button type="button" className=" absolute top-11 right-11" onClick={toggleOpen}>
+      <button type="button" className="absolute top-11 right-11" onClick={toggleOpen}>
         <div className="relative w-5 h-5">
           <Image src={CloseIcon} />
         </div>
