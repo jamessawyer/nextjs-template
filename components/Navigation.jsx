@@ -7,6 +7,7 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 import { useRouter } from 'next/router'
 import { useCallback, useState } from 'react'
 import { LOGOS, LANGS } from '../constants'
+import useStore, { selectToggleOpen } from '../utils/useStore'
 
 function ScrollAnchor({ to, children, first = false, onSetInactive = () => null }) {
   return (
@@ -34,6 +35,8 @@ export default function Navigation() {
   const onSetInactive = useCallback(() => {
     setIsFirst(false)
   }, [])
+
+  const toggleOpen = useStore(selectToggleOpen)
 
   return (
     <header className="sticky top-0 left-0 right-0 z-10">
@@ -66,7 +69,9 @@ export default function Navigation() {
             </li>
             <div className="w-px h-5 bg-[#D9E0E6] opacity-30" />
             <li className="px-9 py-16 nav-text 2xl:px-8 2xl:py-12">
-              <span className="opacity-80 hover:opacity-100">{t('apply')}</span>
+              <button type="button" onClick={toggleOpen} className="opacity-80 hover:opacity-100">
+                {t('apply')}
+              </button>
             </li>
             <div className="w-px h-5 bg-[#D9E0E6] opacity-30" />
             <li className="group relative pl-9 py-16 nav-text 2xl:pl-8 2xl:py-12">

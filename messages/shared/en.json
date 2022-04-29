@@ -10,5 +10,14 @@
   "Contact": {
     "organization": "Constituent bodies:",
     "info": "Contact Us:"
+  },
+  "Modal": {
+    "title": "All applications should be submitted on line and include the following documents:",
+    "item1": "– Application form­ ­duly completed­",
+    "item2": "– Curriculum-vite",
+    "item3": "– Publication list",
+    "item4": "– Short research project",
+    "item5": "– Recommendation letters (not required for Senior researchers)",
+    "emailLabel": "Send to email:"
   }
 }

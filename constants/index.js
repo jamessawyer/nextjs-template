@@ -1,5 +1,7 @@
 import LogoCN from '../public/images/logo/logo-cn.png'
 import LogoEN from '../public/images/logo/logo-en.png'
+import LogoMCN from '../public/images/modal-logo/logo-cn.png'
+import LogoMEN from '../public/images/modal-logo/logo-en.png'
 
 export const LANGS = {
   zh: '简体',
@@ -13,4 +15,9 @@ export const LOGOS = {
   zh: LogoCN,
   en: LogoEN,
   jp: LogoEN,
+}
+export const MODAL_LOGOS = {
+  zh: LogoMCN,
+  en: LogoMEN,
+  jp: LogoMEN,
 }

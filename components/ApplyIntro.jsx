@@ -1,14 +1,13 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import { useCallback } from 'react'
 import { Slide } from 'react-awesome-reveal'
 import ApplyCard from '../public/images/home/apply-card.png'
+import useStore, { selectToggleOpen } from '../utils/useStore'
 
 export default function ApplyIntro() {
   const t = useTranslations('Apply')
 
-  // 打开Modal框
-  const openModal = useCallback(() => {}, [])
+  const toggleOpen = useStore(selectToggleOpen)
 
   return (
     <section
@@ -40,7 +39,7 @@ export default function ApplyIntro() {
           </p>
           <button
             type="button"
-            onClick={openModal}
+            onClick={toggleOpen}
             className="
               w-46 h-14.5 leading-14.5 tracking-[0.26em] bg-[#972F17] text-center text-[#E5E5E5] text-1.5xl mt-auto
               hover:text-white hover:bg-[#972F56] transition-all
