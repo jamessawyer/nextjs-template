@@ -9,7 +9,8 @@
   },
   "Contact": {
     "organization": "组成机构",
-    "info": "合作联系我们："
+    "info": "合作联系我们：",
+    "button": "申请"
   },
   "Modal": {
     "title": "所有申请均应在线提交并包括以下文件：",

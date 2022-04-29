@@ -9,7 +9,8 @@
   },
   "Contact": {
     "organization": "Constituent bodies:",
-    "info": "Contact Us:"
+    "info": "Contact Us:",
+    "button": "Subscribe"
   },
   "Modal": {
     "title": "All applications should be submitted on line and include the following documents:",

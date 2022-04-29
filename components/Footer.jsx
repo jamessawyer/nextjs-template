@@ -1,15 +1,18 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import { memo } from 'react'
+import useStore, { selectToggleOpen } from '../utils/useStore'
 import { LOGOS } from '../constants'
 import ShannonLogo from '../public/images/footer/shannon-logo.png'
 import ShannonText from '../public/images/footer/shannon-text.png'
 import Hust from '../public/images/footer/hust.png'
 
 // todo 点击订阅按钮 弹出Modal
-export default function Footer() {
+function Footer() {
   const t = useTranslations('Contact')
   const { locale: currentLocal } = useRouter()
+  const toggleOpen = useStore(selectToggleOpen)
 
   return (
     <footer className="w-full h-97 bg-[url('/images/footer/bg.png')] bg-cover bg-bottom-center flex flex-row justify-center gap-x-28">
@@ -38,10 +41,13 @@ export default function Footer() {
         <h3 className="font-normal text-xl text-white">027-8888 8888</h3>
         <button
           type="button"
-          className="w-102 h-11 bg-white text-right pr-[18px] mt-8 font-light text-xl text-[#0E204E]">
-          Subscribe
+          onClick={toggleOpen}
+          className="w-102 h-11 bg-white text-right pr-[18px] mt-8 font-light text-xl text-[#0E204E] hover:bg-black hover:text-white transition-all">
+          {t('button')}
         </button>
       </div>
     </footer>
   )
 }
+
+export default memo(Footer)
