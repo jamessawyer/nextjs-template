@@ -120,12 +120,19 @@ function Scholar({ name, title, honors, avatar, onClick }) {
   const t = useTranslations('Scholars')
   return (
     <div className="flex flex-row gap-x-96 items-center justify-center">
-      <div className="relative w-114.25 h-150.25">
+      <div
+        className="
+          relative w-114.25 h-150.25
+          2xl:w-102 2xl:h-140
+        ">
         <Image src={avatar} layout="fill" alt="" />
         <button
           type="button"
           onClick={onClick}
-          className="group absolute -right-[12.875rem] top-1/2 -translate-y-1/2 bg-[#0E204E] w-51.5 h-89.5 hover:bg-[#051847] transition-all">
+          className="
+            group absolute -right-[12.875rem] top-1/2 -translate-y-1/2 bg-[#0E204E] w-51.5 h-89.5 hover:bg-[#051847] transition-all
+            2xl:w-46 2xl:h-80 2xl:-right-[11.5rem]
+          ">
           <div className="relative w-10 h-10 mx-auto group-hover:translate-x-4 transition-transform duration-100">
             <Image src={RightArrow} alt="" priority />
           </div>
@@ -156,13 +163,22 @@ function ScholarCarousel() {
   }, [])
 
   return (
-    <section id="scholar" className="pt-48 pb-60 pl-40">
-      <div cascade direction="up" className="flex flex-col items-center">
+    <section
+      id="scholar"
+      className="
+      pt-48 pb-60 pl-40
+      2xl:pt-32 2xl:pb-36
+      ">
+      <div direction="up" className="flex flex-col items-center">
         <Slide direction="left">
           <h1 className="font-semibold text-6xl text-[#0E204E]">{t('title')}</h1>
         </Slide>
         <Slide direction="right">
-          <h4 className="font-normal text-xl text-[#263238] text-center max-w-181.5 mt-9 mb-36.5">
+          <h4
+            className="
+            font-normal text-xl text-[#263238] text-center max-w-181.5 mt-9 mb-36.5
+            2xl:mb-24
+            ">
             {t('subtitle')}
           </h4>
         </Slide>
