@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { Zoom } from 'react-awesome-reveal'
@@ -15,12 +16,14 @@ function Tag({ src, title, width, height, delay }) {
   )
 }
 
+const MemoedTag = memo(Tag)
+
 export default function TagList({ tags }) {
   const t = useTranslations('Domain')
   return (
     <div className="flex flex-row justify-between grow">
       {tags.map((item, idx) => (
-        <Tag
+        <MemoedTag
           delay={idx}
           key={item.id}
           src={item.src}

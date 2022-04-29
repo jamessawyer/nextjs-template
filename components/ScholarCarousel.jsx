@@ -2,7 +2,7 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Slider from 'react-slick'
-import { useCallback, useRef } from 'react'
+import { useCallback, useRef, memo } from 'react'
 import RightArrow from '../public/images/right-arrow.png'
 import ScholarZhu from '../public/images/scholar/scholar-zhu.png'
 import ScholarYuan from '../public/images/scholar/scholar-yuan.png'
@@ -144,6 +144,8 @@ function Scholar({ name, title, honors, avatar, onClick }) {
   )
 }
 
+const MemoedScholar = memo(Scholar)
+
 export default function ScholarCarousel() {
   const t = useTranslations('Scholars')
 
@@ -163,7 +165,7 @@ export default function ScholarCarousel() {
       <div>
         <Slider {...settings} ref={slider}>
           {SCHOLARS.map((scholar) => (
-            <Scholar key={scholar.id} {...scholar} onClick={onClick} />
+            <MemoedScholar key={scholar.id} {...scholar} onClick={onClick} />
           ))}
         </Slider>
       </div>
