@@ -36,9 +36,27 @@ function Footer() {
         </div>
       </div>
       <div className="flex flex-col mt-32">
-        <h1 className="font-normal text-2xl text-white mb-3">{t('info')}</h1>
-        <h3 className="font-normal text-xl text-white">12349901@shannon.com</h3>
-        <h3 className="font-normal text-xl text-white">027-8888 8888</h3>
+        <h1
+          className="
+          font-normal text-2xl text-white mb-3
+          2xl:text-xl
+        ">
+          {t('info')}
+        </h1>
+        <h3
+          className="
+          font-normal text-xl text-white
+          2xl:text-lg
+          ">
+          12349901@shannon.com
+        </h3>
+        <h3
+          className="
+          font-normal text-xl text-white
+          2xl:text-lg
+          ">
+          027-8888 8888
+        </h3>
         <button
           type="button"
           onClick={toggleOpen}
