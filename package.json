@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "eslint": "eslint --fix .",
+    "eslint:dry": "eslint --fix-dry-run .",
     "format": "prettier --config .prettierrc --write \"./**/*.{js,ts,jsx,tsx,css}\"",
     "prettier:diff": "prettier --config .prettierrc --list-different \"./**/*.{js,ts,jsx,tsx,css}\""
   },
