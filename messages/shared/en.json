@@ -20,5 +20,13 @@
     "item4": "– Short research project",
     "item5": "– Recommendation letters (not required for Senior researchers)",
     "emailLabel": "Send to email:"
+  },
+  "404": {
+    "title": "404 Not Found",
+    "button": "Back Home"
+  },
+  "500": {
+    "title": "500 Server busy",
+    "button": "Back Home"
   }
 }
