@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { memo } from 'react'
 import { Slide } from 'react-awesome-reveal'
 import ApplyCard from '../public/images/home/apply-card.png'
-import useStore, { selectToggleOpen } from '../utils/useStore'
+import useStore, { selectToggleOpen } from '@/utils/useStore'
 
 function ApplyIntro() {
   const t = useTranslations('Apply')

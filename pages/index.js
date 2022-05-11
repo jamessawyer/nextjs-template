@@ -1,8 +1,8 @@
-import ImageCarousel from '../components/ImageCarousel'
-import ApplyIntro from '../components/ApplyIntro'
-import Domain from '../components/Domain'
-import News from '../components/News'
-import ScholarCarousel from '../components/ScholarCarousel'
+import ImageCarousel from '@/components/ImageCarousel'
+import ApplyIntro from '@/components/ApplyIntro'
+import Domain from '@/components/Domain'
+import News from '@/components/News'
+import ScholarCarousel from '@/components/ScholarCarousel'
 
 export default function Home() {
   return (

@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 import { memo } from 'react'
 import { MODAL_LOGOS } from '../constants'
-import useStore, { selectOpen, selectToggleOpen } from '../utils/useStore'
+import useStore, { selectOpen, selectToggleOpen } from '@/utils/useStore'
 import CloseIcon from '../public/images/close.png'
 
 // modal样式
@@ -51,7 +51,7 @@ function ApplyModal() {
       </div>
       <button type="button" className="absolute top-11 right-11" onClick={toggleOpen}>
         <div className="relative w-5 h-5">
-          <Image src={CloseIcon} />
+          <Image src={CloseIcon} alt="" />
         </div>
       </button>
     </Modal>
