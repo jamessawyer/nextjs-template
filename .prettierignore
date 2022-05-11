@@ -5,5 +5,6 @@ pnpm-lock.yaml
 package.json
 public
 dist
+out
 build
 .vscode/*
