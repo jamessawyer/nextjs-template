@@ -11,7 +11,8 @@
     "eslint": "eslint --fix .",
     "eslint:dry": "eslint --fix-dry-run .",
     "format": "prettier --config .prettierrc --write \"./**/*.{js,ts,jsx,tsx,css}\"",
-    "prettier:diff": "prettier --config .prettierrc --list-different \"./**/*.{js,ts,jsx,tsx,css}\""
+    "prettier:diff": "prettier --config .prettierrc --list-different \"./**/*.{js,ts,jsx,tsx,css}\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "autoprefixer": "^10.4.7",
@@ -29,18 +30,21 @@
     "zustand": "^4.0.0-rc.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
     "eslint": "8.13.0",
-    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "12.1.5",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.29.4",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "postcss": "^8.4.12",
     "prettier": "2.6.2"
+  },
+  "lint-staged": {
+    "*.+(js|jsx|ts|tsx)": [
+      "eslint --fix"
+    ],
+    "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
+      "prettier --write"
+    ]
   }
 }
