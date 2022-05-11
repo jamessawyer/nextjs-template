@@ -15,44 +15,44 @@ function Footer() {
   const toggleOpen = useStore(selectToggleOpen)
 
   return (
-    <footer className="w-full h-97 bg-[url('/images/footer/bg.png')] bg-cover bg-bottom-center flex flex-row justify-center gap-x-28">
+    <footer className="bg-bottom-center flex h-97 w-full flex-row justify-center gap-x-28 bg-[url('/images/footer/bg.png')] bg-cover">
       <div className="mt-16">
-        <div className="w-94 relative">
+        <div className="relative w-94">
           <Image src={LOGOS[currentLocal]} alt="HUST AI" priority />
         </div>
-        <h4 className="font-normal text-xs text-white mb-3 ml-6">{t('organization')}</h4>
-        <div className="flex flex-row gap-x-6 ml-6">
-          <div className="w-72 relative">
+        <h4 className="mb-3 ml-6 text-xs font-normal text-white">{t('organization')}</h4>
+        <div className="ml-6 flex flex-row gap-x-6">
+          <div className="relative w-72">
             <Image src={Hust} alt="" priority />
           </div>
           <div className="flex flex-col items-center">
-            <div className="w-7 relative">
+            <div className="relative w-7">
               <Image src={ShannonLogo} alt="" priority />
             </div>
-            <div className="w-26 relative">
+            <div className="relative w-26">
               <Image src={ShannonText} alt="" priority />
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col mt-32">
+      <div className="mt-32 flex flex-col">
         <h1
           className="
-          font-normal text-2xl text-white mb-3
+          mb-3 text-2xl font-normal text-white
           2xl:text-xl
         ">
           {t('info')}
         </h1>
         <h3
           className="
-          font-normal text-xl text-white
+          text-xl font-normal text-white
           2xl:text-lg
           ">
           12349901@shannon.com
         </h3>
         <h3
           className="
-          font-normal text-xl text-white
+          text-xl font-normal text-white
           2xl:text-lg
           ">
           027-8888 8888
@@ -60,7 +60,7 @@ function Footer() {
         <button
           type="button"
           onClick={toggleOpen}
-          className="w-102 h-11 bg-white text-right pr-[18px] mt-8 font-light text-xl text-[#0E204E] hover:bg-black hover:text-white transition-all">
+          className="mt-8 h-11 w-102 bg-white pr-[18px] text-right text-xl font-light text-[#0E204E] transition-all hover:bg-black hover:text-white">
           {t('button')}
         </button>
       </div>

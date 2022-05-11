@@ -10,7 +10,7 @@ function Tag({ src, title, width, height, delay }) {
         <div className={`relative ${width} ${height}`}>
           <Image src={src} alt="" />
         </div>
-        <p className="font-normal text-lg text-[#263238]">{title}</p>
+        <p className="text-lg font-normal text-[#263238]">{title}</p>
       </div>
     </Zoom>
   )
@@ -21,7 +21,7 @@ const MemoedTag = memo(Tag)
 function TagList({ tags }) {
   const t = useTranslations('Domain')
   return (
-    <div className="flex flex-row justify-between grow">
+    <div className="flex grow flex-row justify-between">
       {tags.map((item, idx) => (
         <MemoedTag
           delay={idx}

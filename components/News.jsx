@@ -12,10 +12,10 @@ function News() {
   return (
     <section
       id="news"
-      className="w-full h-188.5 
-        bg-white bg-[url('/images/home/news-bg.png')] bg-[length:100%_44.25rem] bg-left-top
-        bg-no-repeat
-        flex flex-row justify-center items-center gap-x-21.5
+      className="flex h-188.5 
+        w-full flex-row items-center justify-center
+        gap-x-21.5
+        bg-white bg-[url('/images/home/news-bg.png')] bg-[length:100%_44.25rem] bg-left-top bg-no-repeat
         2xl:h-158.5 2xl:gap-x-16 2xl:bg-[length:100%_39.625rem]
       ">
       <div className="flex flex-col">
@@ -29,7 +29,7 @@ function News() {
           </h1>
           <h3
             className="
-              text-4xl text-white mt-2 mb-1
+              mt-2 mb-1 text-4xl text-white
               2xl:text-2xl
               ">
             {t('subtitle1')}
@@ -45,38 +45,38 @@ function News() {
       </div>
       <div
         className="
-        w-296.5 h-158.5 flex flex-row bg-white self-end
-        2xl:w-248 2xl:h-132.5
+        flex h-158.5 w-296.5 flex-row self-end bg-white
+        2xl:h-132.5 2xl:w-248
         ">
         <ul
           className="
-          text-xl text-[#0E204E] w-119.25 h-full shadow-[0px_4px_25px_5px_rgba(0,0,0,0.1)] px-25.25 py-26.5 overflow-y-auto scrollbar-thin scrollbar-thumb-sky-200 scrollbar-track-gray-100
-          2xl:text-base 2xl:w-100 2xl:px-16 2xl:py-20
+          h-full w-119.25 overflow-y-auto px-25.25 py-26.5 text-xl text-[#0E204E] shadow-[0px_4px_25px_5px_rgba(0,0,0,0.1)] scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-sky-200
+          2xl:w-100 2xl:px-16 2xl:py-20 2xl:text-base
           ">
           <li
             className="relative
-              before:content-[''] before:w-2.5 before:h-2.5 before:rounded-full before:bg-[#C4C4C4] before:absolute before:-left-6 before:top-2
+              before:absolute before:-left-6 before:top-2 before:h-2.5 before:w-2.5 before:rounded-full before:bg-[#C4C4C4] before:content-['']
             ">
             {t('content1')}
           </li>
           <li
             className="relative
-            before:content-[''] before:w-2.5 before:h-2.5 before:rounded-full before:bg-[#C4C4C4] before:absolute before:-left-6 before:top-2">
+            before:absolute before:-left-6 before:top-2 before:h-2.5 before:w-2.5 before:rounded-full before:bg-[#C4C4C4] before:content-['']">
             {t('content2')}
           </li>
           <li
             className="relative
-            before:content-[''] before:w-2.5 before:h-2.5 before:rounded-full before:bg-[#C4C4C4] before:absolute before:-left-6 before:top-2">
+            before:absolute before:-left-6 before:top-2 before:h-2.5 before:w-2.5 before:rounded-full before:bg-[#C4C4C4] before:content-['']">
             {t('content3')}
           </li>
           <li
             className="relative
-            before:content-[''] before:w-2.5 before:h-2.5 before:rounded-full before:bg-[#C4C4C4] before:absolute before:-left-6 before:top-2">
+            before:absolute before:-left-6 before:top-2 before:h-2.5 before:w-2.5 before:rounded-full before:bg-[#C4C4C4] before:content-['']">
             {t('content4')}
           </li>
           <li
             className="relative
-            before:content-[''] before:w-2.5 before:h-2.5 before:rounded-full before:bg-[#C4C4C4] before:absolute before:-left-6 before:top-2">
+            before:absolute before:-left-6 before:top-2 before:h-2.5 before:w-2.5 before:rounded-full before:bg-[#C4C4C4] before:content-['']">
             {t('content5')}
           </li>
         </ul>
@@ -86,8 +86,8 @@ function News() {
             <Link href={{ pathname: '/news' }} locale={currentLocal}>
               <a
                 className="
-                  py-6 px-16 text-xs text-[#333333] tracking-[.2em]  bg-white flex flex-row items-center gap-x-4
-                  hover:bg-[#000] hover:text-white transition-all
+                  flex flex-row items-center gap-x-4 bg-white  py-6 px-16 text-xs tracking-[.2em] text-[#333333]
+                  transition-all hover:bg-[#000] hover:text-white
               ">
                 <span>{t('button')}</span>
                 <span className="text-lg">→</span>

@@ -4,7 +4,7 @@
 
 @layer components {
   .nav-text {
-    @apply font-medium text-2.5xl tracking-wider text-[#E5e6e6];
+    @apply text-2.5xl font-medium tracking-wider text-[#E5e6e6];
   }
 }
 
@@ -20,7 +20,6 @@ html {
   margin: 0 15px;
 }
 
-
 .gallery-dots.slick-dots li button:before {
   color: #fff;
   opacity: 1;
@@ -28,11 +27,14 @@ html {
 }
 
 .gallery-dots.slick-dots li.slick-active button:before {
-  color: #972F17;
+  color: #972f17;
   opacity: 1;
 }
 
-#institution, #scholar, #news, #domain {
+#institution,
+#scholar,
+#news,
+#domain {
   scroll-margin-top: 225px;
 }
 
@@ -49,7 +51,10 @@ html {
     font-size: 14px;
   }
 
-  #institution, #scholar, #news, #domain {
+  #institution,
+  #scholar,
+  #news,
+  #domain {
     scroll-margin-top: 164px;
   }
 }

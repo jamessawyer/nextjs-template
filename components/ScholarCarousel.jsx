@@ -119,21 +119,21 @@ const settings = {
 function Scholar({ name, title, honors, avatar, onClick }) {
   const t = useTranslations('Scholars')
   return (
-    <div className="flex flex-row gap-x-96 items-center justify-center">
+    <div className="flex flex-row items-center justify-center gap-x-96">
       <div
         className="
-          relative w-114.25 h-150.25
-          2xl:w-102 2xl:h-140
+          relative h-150.25 w-114.25
+          2xl:h-140 2xl:w-102
         ">
         <Image src={avatar} layout="fill" alt="" />
         <button
           type="button"
           onClick={onClick}
           className="
-            group absolute -right-[12.875rem] top-1/2 -translate-y-1/2 bg-[#0E204E] w-51.5 h-89.5 hover:bg-[#051847] transition-all
-            2xl:w-46 2xl:h-80 2xl:-right-[11.5rem]
+            group absolute -right-[12.875rem] top-1/2 h-89.5 w-51.5 -translate-y-1/2 bg-[#0E204E] transition-all hover:bg-[#051847]
+            2xl:-right-[11.5rem] 2xl:h-80 2xl:w-46
           ">
-          <div className="relative w-10 h-10 mx-auto group-hover:translate-x-4 transition-transform duration-100">
+          <div className="relative mx-auto h-10 w-10 transition-transform duration-100 group-hover:translate-x-4">
             <Image src={RightArrow} alt="" priority />
           </div>
         </button>
@@ -144,7 +144,7 @@ function Scholar({ name, title, honors, avatar, onClick }) {
           <span className="text-2xl">{t(title)}</span>
         </div>
         <div
-          className="flex flex-col text-[#0E204E] max-w-sm tracking-wider"
+          className="flex max-w-sm flex-col tracking-wider text-[#0E204E]"
           dangerouslySetInnerHTML={{ __html: t.raw(honors) }}
         />
       </div>
@@ -171,12 +171,12 @@ function ScholarCarousel() {
       ">
       <div direction="up" className="flex flex-col items-center">
         <Slide direction="left">
-          <h1 className="font-semibold text-6xl text-[#0E204E]">{t('title')}</h1>
+          <h1 className="text-6xl font-semibold text-[#0E204E]">{t('title')}</h1>
         </Slide>
         <Slide direction="right">
           <h4
             className="
-            font-normal text-xl text-[#263238] text-center max-w-181.5 mt-9 mb-36.5
+            mt-9 mb-36.5 max-w-181.5 text-center text-xl font-normal text-[#263238]
             2xl:mb-24
             ">
             {t('subtitle')}

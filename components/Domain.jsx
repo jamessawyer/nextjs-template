@@ -63,27 +63,27 @@ function Domain() {
     <section
       id="domain"
       className="
-      bg-[#E5E5E5] pt-26.5 px-45 pb-40
-        2xl:pt-20 2xl:px-32 2xl:pb-28
+      bg-[#E5E5E5] px-45 pt-26.5 pb-40
+        2xl:px-32 2xl:pt-20 2xl:pb-28
     ">
-      <Fade direction="up" cascade className="flex flex-col ml-4">
+      <Fade direction="up" cascade className="ml-4 flex flex-col">
         <h1
           className="
-            font-semibold text-6xl text-[#0E204E]
+            text-6xl font-semibold text-[#0E204E]
             2xl:text-5xl
           ">
           {t('title')}
         </h1>
         <h2
           className="
-            font-semibold text-6xl text-[#0E204E] mt-5 mb-2
+            mt-5 mb-2 text-6xl font-semibold text-[#0E204E]
             2xl:text-5xl
         ">
           {t('subtitle')}
         </h2>
         <p
           className="
-          max-w-4xl font-normal text-xl text-[#263238] opacity-80 mt-3.5 mb-20
+          mt-3.5 mb-20 max-w-4xl text-xl font-normal text-[#263238] opacity-80
           2xl:text-lg
           ">
           {t('description')}
@@ -91,15 +91,15 @@ function Domain() {
       </Fade>
       <div
         className="
-        flex flex-row justify-between items-center gap-x-94
+        flex flex-row items-center justify-between gap-x-94
         2xl:gap-x-60
         ">
         <Zoom>
           <div
-            className="relative w-142 h-148
-              after:content-[''] after:w-52 after:h-89.5 after:bg-[#0E204E]
-              after:absolute -after:right-full after:top-1/2 after:-translate-y-1/2
-              2xl:w-96 2xl:h-100 2xl:after:w-24 2xl:after:h-56
+            className="-after:right-full relative h-148
+              w-142 after:absolute after:top-1/2 after:h-89.5
+              after:w-52 after:-translate-y-1/2 after:bg-[#0E204E] after:content-['']
+              2xl:h-100 2xl:w-96 2xl:after:h-56 2xl:after:w-24
               ">
             <Image src={DomainCard1} alt="" />
           </div>
@@ -108,15 +108,15 @@ function Domain() {
       </div>
       <div
         className="
-        flex flex-row-reverse justify-between items-center gap-x-94
+        flex flex-row-reverse items-center justify-between gap-x-94
         2xl:gap-x-60
       ">
         <Zoom>
           <div
-            className="relative w-142 h-148 grow-0
-              after:content-[''] after:w-52 after:h-89.5 after:bg-[#0E204E]
-              after:absolute after:-left-52 after:top-1/2 after:-translate-y-1/2
-              2xl:w-96 2xl:h-100 2xl:after:w-24 2xl:after:h-56 2xl:after:-left-24
+            className="relative h-148 w-142 grow-0
+              after:absolute after:-left-52 after:top-1/2 after:h-89.5
+              after:w-52 after:-translate-y-1/2 after:bg-[#0E204E] after:content-['']
+              2xl:h-100 2xl:w-96 2xl:after:-left-24 2xl:after:h-56 2xl:after:w-24
               ">
             <Image src={DomainCard2} alt="" />
           </div>

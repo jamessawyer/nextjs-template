@@ -7,12 +7,12 @@ export default function Custom500() {
   const { locale } = useRouter()
 
   return (
-    <section className="w-full h-screen flex flex-col items-center justify-center">
+    <section className="flex h-screen w-full flex-col items-center justify-center">
       <h2 className="text-4xl">{t('title')}</h2>
       <Link href="/" locale={locale}>
         <a
-          className="w-46 h-10 leading-10 tracking-[0.26em] bg-[#972F17] text-center text-[#E5E5E5] mt-5 text-xl inline-flex justify-center items-center
-              hover:text-white hover:bg-[#972F56] transition-all
+          className="mt-5 inline-flex h-10 w-46 items-center justify-center bg-[#972F17] text-center text-xl leading-10 tracking-[0.26em] text-[#E5E5E5]
+              transition-all hover:bg-[#972F56] hover:text-white
               2xl:text-lg">
           {t('button')}
         </a>
