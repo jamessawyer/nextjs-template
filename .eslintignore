@@ -1,5 +1,6 @@
 next.config.js
 .next
+out
 node_modules
 pnpm-lock.yaml
 package.json
