@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "build:static": "next build && next export",
+    "analyze": "cross-env ANALYZE=true next build",
     "start": "next start",
     "lint": "next lint",
     "eslint": "eslint --config .eslintrc.js --fix .",
@@ -30,6 +31,8 @@
     "zustand": "^4.0.0-rc.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^12.1.6",
+    "cross-env": "^7.0.3",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5",
     "eslint-config-prettier": "^8.5.0",
