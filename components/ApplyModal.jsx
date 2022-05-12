@@ -33,11 +33,20 @@ function ApplyModal() {
     <Modal
       isOpen={isOpen}
       style={customStyles}
-      className="relative z-50 flex flex-col gap-y-9 bg-[#EBEBEB] !pt-10 !pl-7 !pr-24 !pb-20">
-      <div className="relative w-94">
+      className="
+        relative z-50 flex flex-col gap-y-9 bg-[#EBEBEB] !pt-10 !pl-7 !pr-24 !pb-20
+
+        sm:!pt-6 sm:!pl-2 sm:!pr-18 sm:!pb-12 sm:gap-y-6 sm:mr-4 sm:ml-4
+      ">
+      <div className="relative w-94 sm:w-72">
         <Image src={MODAL_LOGOS[currentLocal]} alt="" />
       </div>
-      <div className="w-181.5 pl-9 text-xl font-normal text-[#263238] opacity-80">
+      <div
+        className="
+        w-181.5 pl-9 text-xl font-normal text-[#263238] opacity-80
+        
+        sm:text-xs sm:pl-4 sm:w-[320px] sw:break-words
+        ">
         <p>{t('title')}</p>
         <p>{t('item1')}</p>
         <p>{t('item2')}</p>
@@ -49,8 +58,11 @@ function ApplyModal() {
           <span className="text-[#972F17]">aiii@aifun.com</span>
         </p>
       </div>
-      <button type="button" className="absolute top-11 right-11" onClick={toggleOpen}>
-        <div className="relative h-5 w-5">
+      <button
+        type="button"
+        className="absolute top-11 right-11 sm:top-6 sm:right-6"
+        onClick={toggleOpen}>
+        <div className="relative h-5 w-5 sm:h-4 sm:w-4">
           <Image src={CloseIcon} alt="" />
         </div>
       </button>
