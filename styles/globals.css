@@ -58,10 +58,6 @@ html {
   scroll-margin-top: 225px;
 }
 
-.ReactModal__Body--open {
-  overflow-y: hidden;
-}
-
 @media screen(2xl) {
   .nav-text {
     @apply text-xl;
