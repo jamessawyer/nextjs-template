@@ -57,7 +57,7 @@ function ApplyIntro() {
       <section
         className="
         mobile hidden sm:flex flex-col items-center h-[498px] w-full
-        bg-[#132A4F] bg-[url('/images/home/m-apply-bg.png')] bg-cover bg-center px-9 py-14 mix-blend-overlay
+        bg-[#132A4F] bg-[url('/images/home/m-apply-bg.png')] bg-cover bg-center px-9 py-14
       ">
         <h1 className="font-bold text-2xl text-white text-center tracking-wider">{t('title')}</h1>
         <p className="mt-9 font-normal text-[13px] leading-[18px] text-center text-[#E5E5E5]">
