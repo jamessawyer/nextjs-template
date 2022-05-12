@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 import { useRouter } from 'next/router'
-import { memo, useCallback, useState } from 'react'
+import { memo, useCallback, useEffect, useState } from 'react'
 import { LOGOS, LANGS } from '../constants'
 import useStore, { selectToggleOpen } from '@/utils/useStore'
 
@@ -36,6 +36,11 @@ function Navigation() {
   const onSetInactive = useCallback(() => {
     setIsFirst(false)
   }, [])
+
+  useEffect(() => {
+    // 切换语言时 隐藏菜单
+    setIsOpen(false)
+  }, [currentLocal])
 
   // mobile
   const toggleMenu = () => {
@@ -121,9 +126,9 @@ function Navigation() {
 
       <section
         className="
-        relative hidden sm:flex sm:justify-between sm:items-center 
-        sm:bg-[#0E204E] sm:h-[140px]
-         sm:w-full sm:pl-1.5 sm:pr-7 sm:py-3.5
+        relative hidden sm:flex justify-between items-center 
+        bg-[#0E204E] h-[140px]
+         w-full pl-1.5 pr-7 py-3.5
         ">
         <div className="relative w-[227px] h-[113px]">
           <Image src={LOGOS[currentLocal]} alt="HUST AI" priority />
