@@ -25,6 +25,7 @@ README.md
 .lintstagedrc
 .prettierrc
 .prettierignore
+.husky
 
 ### VisualStudioCode ###
 .vscode/*
