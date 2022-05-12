@@ -119,11 +119,19 @@ const settings = {
 function Scholar({ name, title, honors, avatar, onClick }) {
   const t = useTranslations('Scholars')
   return (
-    <div className="flex flex-row items-center justify-center gap-x-96">
+    <div
+      className="
+      flex flex-row items-center justify-center gap-x-96
+
+      sm:gap-x-16
+      sm:justify-between
+      ">
       <div
         className="
           relative h-150.25 w-114.25
           2xl:h-140 2xl:w-102
+
+          sm:h-[161px] sm:min-w-[121px] sm:w-[121px] sm:grow
         ">
         <Image src={avatar} layout="fill" alt="" />
         <button
@@ -132,19 +140,43 @@ function Scholar({ name, title, honors, avatar, onClick }) {
           className="
             group absolute -right-[12.875rem] top-1/2 h-89.5 w-51.5 -translate-y-1/2 bg-[#0E204E] transition-all hover:bg-[#051847]
             2xl:-right-[11.5rem] 2xl:h-80 2xl:w-46
+
+            sm:h-[100px] sm:w-[39px] sm:-right-[39px]
           ">
-          <div className="relative mx-auto h-10 w-10 transition-transform duration-100 group-hover:translate-x-4">
+          <div
+            className="
+            relative mx-auto h-10 w-10 transition-transform duration-100 group-hover:translate-x-4
+
+            sm:w-[17px] sm:h-[17px] sm:transition-none sm:group-hover:translate-x-0
+            ">
             <Image src={RightArrow} alt="" priority />
           </div>
         </button>
       </div>
-      <div className="flex flex-col gap-y-8">
-        <div className="flex flex-row items-end gap-x-2 text-[#0E204E]">
-          <span className="text-4xl tracking-wider">{t(name)}</span>
-          <span className="text-2xl">{t(title)}</span>
+
+      <div className="flex flex-col gap-y-8 sm:gap-y-1.5 sm:items-start">
+        <div
+          className="
+          flex flex-row items-end gap-x-2 text-[#0E204E]
+
+          sm:flex-col sm:items-start sm:gap-x-0
+          ">
+          <span
+            className="
+            text-4xl tracking-wider
+
+            sm:text-xl
+            ">
+            {t(name)}
+          </span>
+          <span className="text-2xl sm:text-xs">{t(title)}</span>
         </div>
         <div
-          className="flex max-w-sm flex-col tracking-wider text-[#0E204E]"
+          className="
+            flex max-w-sm flex-col tracking-wider text-[#0E204E]
+
+            sm:text-xs sm:origin-top-left sm:scale-75
+          "
           dangerouslySetInnerHTML={{ __html: t.raw(honors) }}
         />
       </div>
@@ -168,16 +200,26 @@ function ScholarCarousel() {
       className="
       pt-48 pb-60 pl-40
       2xl:pt-32 2xl:pb-36
+
+      sm:px-6 sm:pt-16 sm:pb-10
       ">
-      <div direction="up" className="flex flex-col items-center">
+      <div direction="up" className="flex flex-col items-center sm:mb-12">
         <Slide direction="left">
-          <h1 className="text-6xl font-semibold text-[#0E204E]">{t('title')}</h1>
+          <h1
+            className="
+            text-6xl font-semibold text-[#0E204E] 
+            sm:text-2xl sm:px-20 sm:text-center
+          ">
+            {t('title')}
+          </h1>
         </Slide>
         <Slide direction="right">
           <h4
             className="
             mt-9 mb-36.5 max-w-181.5 text-center text-xl font-normal text-[#263238]
             2xl:mb-24
+            
+            sm:hidden
             ">
             {t('subtitle')}
           </h4>
