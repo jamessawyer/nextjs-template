@@ -31,6 +31,26 @@ html {
   opacity: 1;
 }
 
+.mobile .gallery-dots.slick-dots {
+  bottom: -80px;
+}
+
+.mobile .gallery-dots.slick-dots li {
+  margin: 0 5px;
+}
+
+.mobile .gallery-dots.slick-dots li button:before {
+  color: #fff;
+  opacity: 1;
+  font-size: 12px;
+  transform: scale(0.8);
+}
+
+.mobile .gallery-dots.slick-dots li.slick-active button:before {
+  color: #972f17;
+  opacity: 1;
+}
+
 #institution,
 #scholar,
 #news,
