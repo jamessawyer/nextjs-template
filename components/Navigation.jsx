@@ -134,7 +134,7 @@ function Navigation() {
           <div className="h-0.5 w-6 bg-[#E5E5E5]" />
         </div>
         {/* className={`opacity-80 hover:opacity-100 ${first && 'opacity-100'}`} */}
-        <ul className={`top-full right-0 bg-[#1A487F] ${isOpen ? 'absolute' : 'hidden'}`}>
+        <ul className={`top-full right-0 bg-[#1A487F] z-10 ${isOpen ? 'absolute' : 'hidden'}`}>
           {locales.map((locale) => {
             if (locale === currentLocal) {
               return (
