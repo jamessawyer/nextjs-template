@@ -25,13 +25,13 @@ function Footer() {
         <div className="relative w-94 sm:w-[217px] sm:-ml-4">
           <Image src={LOGOS[currentLocal]} alt="HUST AI" priority />
         </div>
-        <h4
+        <p
           className="
           mb-3 ml-6 text-xs font-normal text-white
           sm:mb-0 sm:ml-0
           ">
           {t('organization')}
-        </h4>
+        </p>
         <div
           className="
           ml-6 flex flex-row gap-x-6
@@ -69,7 +69,7 @@ function Footer() {
         ">
           {t('info')}
         </h1>
-        <h3
+        <h2
           className="
           text-xl font-normal text-white
           2xl:text-lg
@@ -79,8 +79,8 @@ function Footer() {
           sm:scale-90
           ">
           12349901@shannon.com
-        </h3>
-        <h3
+        </h2>
+        <h2
           className="
           text-xl font-normal text-white
           2xl:text-lg
@@ -90,7 +90,7 @@ function Footer() {
           sm:scale-90
           ">
           027-8888 8888
-        </h3>
+        </h2>
         <button
           type="button"
           onClick={toggleOpen}

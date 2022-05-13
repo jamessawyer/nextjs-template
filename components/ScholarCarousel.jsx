@@ -216,7 +216,7 @@ function ScholarCarousel() {
           </h1>
         </Slide>
         <Slide direction="right">
-          <h4
+          <p
             className="
             mt-9 mb-36.5 max-w-181.5 text-center text-xl font-normal text-[#263238]
             2xl:mb-24
@@ -224,7 +224,7 @@ function ScholarCarousel() {
             sm:hidden
             ">
             {t('subtitle')}
-          </h4>
+          </p>
         </Slide>
       </div>
       <div>

@@ -63,30 +63,50 @@ function Navigation() {
 
           <nav>
             <ul className="flex cursor-pointer flex-row items-center justify-between">
-              <li className="nav-text py-16 pr-9 2xl:py-12 2xl:pr-8">
+              <li
+                className="
+                  nav-text relative py-16 pr-9 2xl:py-12 2xl:pr-8
+                  after:content-[''] after:h-5 after:w-px after:bg-[#D9E0E6] after:opacity-30
+                  after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2
+                ">
                 <ScrollAnchor to="institution" first={isFirst} onSetInactive={onSetInactive}>
                   {t('institution')}
                 </ScrollAnchor>
               </li>
-              <div className="h-5 w-px bg-[#D9E0E6] opacity-30" />
-              <li className="nav-text px-9 py-16 2xl:px-8 2xl:py-12">
+              <li
+                className="
+                nav-text relative px-9 py-16 2xl:px-8 2xl:py-12
+                after:content-[''] after:h-5 after:w-px after:bg-[#D9E0E6] after:opacity-30
+                after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2
+                ">
                 <ScrollAnchor to="news">{t('news')}</ScrollAnchor>
               </li>
-              <div className="h-5 w-px bg-[#D9E0E6] opacity-30" />
-              <li className="nav-text px-9 py-16 2xl:px-8 2xl:py-12">
+              <li
+                className="
+                nav-text relative px-9 py-16 2xl:px-8 2xl:py-12
+                after:content-[''] after:h-5 after:w-px after:bg-[#D9E0E6] after:opacity-30
+                after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2
+                ">
                 <ScrollAnchor to="scholar">{t('scholar')}</ScrollAnchor>
               </li>
-              <div className="h-5 w-px bg-[#D9E0E6] opacity-30" />
-              <li className="nav-text px-9 py-16 2xl:px-8 2xl:py-12">
+              <li
+                className="
+                nav-text relative px-9 py-16 2xl:px-8 2xl:py-12
+                after:content-[''] after:h-5 after:w-px after:bg-[#D9E0E6] after:opacity-30
+                after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2
+                ">
                 <ScrollAnchor to="domain">{t('domain')}</ScrollAnchor>
               </li>
-              <div className="h-5 w-px bg-[#D9E0E6] opacity-30" />
-              <li className="nav-text px-9 py-16 2xl:px-8 2xl:py-12">
+              <li
+                className="
+                nav-text relative px-9 py-16 2xl:px-8 2xl:py-12
+                after:content-[''] after:h-5 after:w-px after:bg-[#D9E0E6] after:opacity-30
+                after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2
+                ">
                 <button type="button" onClick={toggleOpen} className="opacity-80 hover:opacity-100">
                   {t('apply')}
                 </button>
               </li>
-              <div className="h-5 w-px bg-[#D9E0E6] opacity-30" />
               <li className="nav-text group relative py-16 pl-9 2xl:py-12 2xl:pl-8">
                 <div className="flex flex-row items-center justify-between gap-x-7 opacity-80 hover:opacity-100">
                   <span>{t('lang')}</span>

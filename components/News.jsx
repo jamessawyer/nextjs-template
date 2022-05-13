@@ -29,20 +29,20 @@ function News() {
               ">
               {t('title')}
             </h1>
-            <h3
+            <h2
               className="
                 mt-2 mb-1 text-4xl text-white
                 2xl:text-2xl
                 ">
               {t('subtitle1')}
-            </h3>
-            <h3
+            </h2>
+            <h2
               className="
                 text-4xl text-white
                 2xl:text-2xl
               ">
               {t('subtitle2')}
-            </h3>
+            </h2>
           </Fade>
         </div>
         <div
@@ -110,8 +110,8 @@ function News() {
           ">
           <Fade cascade direction="up">
             <h1 className="text-2xl text-white">{t('title')}</h1>
-            <h3 className="mt-2 mb-1 text-sm text-white">{t('subtitle1')}</h3>
-            <h3 className="text-sm text-white">{t('subtitle2')}</h3>
+            <h2 className="mt-2 mb-1 text-sm text-white">{t('subtitle1')}</h2>
+            <h2 className="text-sm text-white">{t('subtitle2')}</h2>
           </Fade>
         </div>
 
