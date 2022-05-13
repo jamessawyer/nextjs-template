@@ -36,7 +36,13 @@ function MyApp({ Component, pageProps }) {
       getMessageFallback={getMessageFallback}>
       <Head>
         <title>{Component.title || 'AI Lab'}</title>
-        <meta name="description" content={Component.description || ''} />
+        <meta
+          name="description"
+          content={
+            Component.description ||
+            'AIFUN and Huazhong University Of Science and Technology AI Tech'
+          }
+        />
       </Head>
       <PageLayout>
         <Component {...pageProps} />
