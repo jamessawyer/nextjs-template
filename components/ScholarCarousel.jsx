@@ -137,6 +137,8 @@ function Scholar({ name, title, honors, avatar, onClick }) {
         <button
           type="button"
           onClick={onClick}
+          aria-hidden
+          tabIndex="-1"
           className="
             group absolute -right-[12.875rem] top-1/2 h-89.5 w-51.5 -translate-y-1/2 bg-[#0E204E] transition-all hover:bg-[#051847]
             2xl:-right-[11.5rem] 2xl:h-80 2xl:w-46
@@ -218,7 +220,7 @@ function ScholarCarousel() {
             className="
             mt-9 mb-36.5 max-w-181.5 text-center text-xl font-normal text-[#263238]
             2xl:mb-24
-            
+
             sm:hidden
             ">
             {t('subtitle')}
