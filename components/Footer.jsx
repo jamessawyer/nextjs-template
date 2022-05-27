@@ -105,24 +105,24 @@ function Footer() {
           </button>
         </div>
       </footer>
-      <section className="w-full h-[95px] pl-[235px] flex flex-row items-center gap-x-12 bg-[#202020] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.48)]">
-        <div className="inline-flex flex-row items-center gap-x-2.5">
-          <div className="relative w-8 h-6">
+      <section
+        className="
+        w-full h-24 pl-[235px] flex flex-row items-center gap-x-12 bg-[#202020] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.48)]
+        text-xl text-white
+        sm:h-[84px] sm:flex-col-reverse sm:gap-y-2 sm:justify-center sm:pl-[0] sm:text-xs
+        ">
+        <div className="inline-flex flex-row items-center gap-x-2.5 sm:gap-x-1">
+          <div className="relative w-8 h-6 sm:w-4 sm:h-3">
             <Image src={Badge} alt="" />
           </div>
           <a
-            className="text-xl text-white"
             target="_blank"
             href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42018502004969"
             rel="noreferrer">
             鄂公网安备 42018502004969号
           </a>
         </div>
-        <a
-          className="text-xl text-white"
-          target="_blank"
-          href="https://beian.miit.gov.cn/#/Integrated/index"
-          rel="noreferrer">
+        <a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index" rel="noreferrer">
           鄂 ICP备2020022374号-3
         </a>
       </section>
