@@ -15,7 +15,6 @@ import ScholarChen from '../public/images/scholar/scholar-chen.png'
 import ScholarLiu from '../public/images/scholar/scholar-liu.png'
 import ScholarYan from '../public/images/scholar/scholar-yan.png'
 import ScholarEyad from '../public/images/scholar/scholar-eyad.png'
-import ScholarThomas from '../public/images/scholar/scholar-thomas.png'
 import ScholarLee from '../public/images/scholar/scholar-lee.png'
 
 const SCHOLARS = [
@@ -88,13 +87,6 @@ const SCHOLARS = [
     title: 'scholar10.title',
     honors: 'scholar10.honors',
     avatar: ScholarEyad,
-  },
-  {
-    id: 11,
-    name: 'scholar11.name',
-    title: 'scholar11.title',
-    honors: 'scholar11.honors',
-    avatar: ScholarThomas,
   },
   {
     id: 12,
