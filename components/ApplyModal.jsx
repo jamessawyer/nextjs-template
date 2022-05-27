@@ -57,6 +57,10 @@ function ApplyModal() {
           <span>{t('emailLabel')}</span>
           <span className="text-[#972F17]">aiii@aifun.com</span>
         </p>
+        <p className="mt-4 flex flex-row items-center gap-x-2">
+          <span>{t('phone')}</span>
+          <span className="text-[#972F17]">8754941</span>
+        </p>
       </div>
       <button
         type="button"

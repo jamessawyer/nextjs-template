@@ -1,7 +1,7 @@
 {
   "Navigation": {
     "institution": "研究所",
-    "news": "新闻",
+    "news": "事记",
     "scholar": "学者",
     "domain": "领域",
     "apply": "申请",
@@ -19,7 +19,8 @@
     "item3": "– 出版物清单",
     "item4": "– 短期研究项目",
     "item5": "– 推荐信（高级研究人员不需要）",
-    "emailLabel": "发送至邮箱："
+    "emailLabel": "发送至邮箱：",
+    "phone": "HUSTAIII 电话："
   },
   "404": {
     "title": "404 网页走失了",
