@@ -6,6 +6,13 @@
   .nav-text {
     @apply text-1.5xl font-medium tracking-wider text-[#E5e6e6];
   }
+
+  .article-heading {
+    @apply text-3xl font-medium text-[#263238];
+  }
+  .article-p {
+    @apply text-lg text-justify font-normal leading-relaxed text-[#263238];
+  }
 }
 
 html {
