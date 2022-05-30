@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 import { useRouter } from 'next/router'
 import { memo, useCallback, useEffect, useState } from 'react'
-import { LOGOS, LANGS } from '../constants'
+import { HEADER_LOGOS, LANGS } from '../constants'
 import useStore, { selectToggleOpen } from '@/utils/useStore'
 
 function ScrollAnchor({ to, children, first = false, onSetInactive = () => null }) {
@@ -17,7 +17,7 @@ function ScrollAnchor({ to, children, first = false, onSetInactive = () => null 
       smooth="linear"
       delay={0}
       spy
-      offset={-164}
+      offset={0}
       duration={150}
       onSetInactive={onSetInactive}
       className={`opacity-80 hover:opacity-100 ${first && 'opacity-100'}`}>
@@ -56,16 +56,16 @@ function Navigation() {
         <section className="h-9 w-full bg-[#112541] sm:hidden" />
         <section className="flex flex-row items-center justify-between bg-[#1A487F] pl-44 pr-28 2xl:pl-28">
           <div
-            className="relative w-94 cursor-pointer 2xl:w-60"
+            className="relative w-120 cursor-pointer"
             onClick={() => scroll.scrollToTop({ delay: 0, duration: 150 })}>
-            <Image src={LOGOS[currentLocal]} alt="HUST AI" priority />
+            <Image src={HEADER_LOGOS[currentLocal]} alt="HUST AI" priority />
           </div>
 
           <nav>
             <ul className="flex cursor-pointer flex-row items-center justify-between">
               <li
                 className="
-                  nav-text relative py-16 pr-9 2xl:py-12 2xl:pr-8
+                  nav-text relative py-10 pr-9 2xl:pr-8
                   after:content-[''] after:h-5 after:w-px after:bg-[#D9E0E6] after:opacity-30
                   after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2
                 ">
@@ -75,7 +75,7 @@ function Navigation() {
               </li>
               <li
                 className="
-                nav-text relative px-9 py-16 2xl:px-8 2xl:py-12
+                nav-text relative px-9 py-10 2xl:px-8
                 after:content-[''] after:h-5 after:w-px after:bg-[#D9E0E6] after:opacity-30
                 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2
                 ">
@@ -83,7 +83,7 @@ function Navigation() {
               </li>
               <li
                 className="
-                nav-text relative px-9 py-16 2xl:px-8 2xl:py-12
+                nav-text relative px-9 py-10 2xl:px-8
                 after:content-[''] after:h-5 after:w-px after:bg-[#D9E0E6] after:opacity-30
                 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2
                 ">
@@ -91,7 +91,7 @@ function Navigation() {
               </li>
               <li
                 className="
-                nav-text relative px-9 py-16 2xl:px-8 2xl:py-12
+                nav-text relative px-9 py-10 2xl:px-8
                 after:content-[''] after:h-5 after:w-px after:bg-[#D9E0E6] after:opacity-30
                 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2
                 ">
@@ -99,7 +99,7 @@ function Navigation() {
               </li>
               <li
                 className="
-                nav-text relative px-9 py-16 2xl:px-8 2xl:py-12
+                nav-text relative px-9 py-10 2xl:px-8
                 after:content-[''] after:h-5 after:w-px after:bg-[#D9E0E6] after:opacity-30
                 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2
                 ">
@@ -107,7 +107,7 @@ function Navigation() {
                   {t('apply')}
                 </button>
               </li>
-              <li className="nav-text group relative py-16 pl-9 2xl:py-12 2xl:pl-8">
+              <li className="nav-text group relative py-10 pl-9 2xl:pl-8">
                 <div className="flex flex-row items-center justify-between gap-x-7 opacity-80 hover:opacity-100">
                   <span>{t('lang')}</span>
                   <div className="space-y-1.5 2xl:space-y-1">
@@ -146,19 +146,18 @@ function Navigation() {
 
       <section
         className="
-        relative hidden sm:flex justify-between items-center 
-        bg-[#0E204E] h-[140px]
+        mobile relative hidden sm:flex justify-between items-center 
+        bg-[#0E204E]
          w-full pl-1.5 pr-7 py-3.5
         ">
-        <div className="relative w-[227px] h-[113px]">
-          <Image src={LOGOS[currentLocal]} alt="HUST AI" priority />
+        <div className="relative w-[227px]">
+          <Image src={HEADER_LOGOS[currentLocal]} alt="HUST AI" priority />
         </div>
-        <div className="space-y-2 self-end mb-4" onClick={toggleMenu}>
+        <div className="space-y-2" onClick={toggleMenu}>
           <div className="h-0.5 w-6 bg-[#E5E5E5]" />
           <div className="h-0.5 w-6 bg-[#E5E5E5]" />
           <div className="h-0.5 w-6 bg-[#E5E5E5]" />
         </div>
-        {/* className={`opacity-80 hover:opacity-100 ${first && 'opacity-100'}`} */}
         <ul className={`top-full right-0 bg-[#1A487F] z-10 ${isOpen ? 'absolute' : 'hidden'}`}>
           {locales.map((locale) => {
             if (locale === currentLocal) {
