@@ -4,7 +4,6 @@ import '@/styles/globals.css'
 // slick引入问题 https://stackoverflow.com/a/69292192
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import PageLayout from '@/components/PageLayout'
 
 function onError(error) {
   if (error.code === IntlErrorCode.MISSING_MESSAGE) {
@@ -44,9 +43,7 @@ function MyApp({ Component, pageProps }) {
           }
         />
       </Head>
-      <PageLayout>
-        <Component {...pageProps} />
-      </PageLayout>
+      <Component {...pageProps} />
     </NextIntlProvider>
   )
 }

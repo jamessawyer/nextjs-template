@@ -3,16 +3,17 @@ import ApplyIntro from '@/components/ApplyIntro'
 import Domain from '@/components/Domain'
 import News from '@/components/News'
 import ScholarCarousel from '@/components/ScholarCarousel'
+import PageLayout from '@/components/PageLayout'
 
 export default function Home() {
   return (
-    <>
+    <PageLayout>
       <ImageCarousel />
       <ApplyIntro />
       <Domain />
       <News />
       <ScholarCarousel />
-    </>
+    </PageLayout>
   )
 }
 
