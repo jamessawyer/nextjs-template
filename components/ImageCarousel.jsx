@@ -42,9 +42,18 @@ function ImageCarousel() {
 
       <section className="mobile hidden sm:block sm:bg-[#0e204e] sm:pb-16">
         <Slider {...settings}>
-          <div className="h-[237px] w-full bg-[url('/images/home/m-banner-1.png')] bg-cover bg-center" />
-          <div className="h-[237px] w-full bg-[url('/images/home/m-banner-1.png')] bg-cover bg-center" />
-          <div className="h-[237px] w-full bg-[url('/images/home/m-banner-1.png')] bg-cover bg-center" />
+          <Link href={{ pathname: '/article/1' }} locale={currentLocal} passHref>
+            <div className="h-[237px] w-full bg-[url('/images/home/banner-1.png')] bg-cover bg-center" />
+          </Link>
+          <Link href={{ pathname: '/article/2' }} locale={currentLocal} passHref>
+            <div className="h-[237px] w-full bg-[url('/images/home/banner-2.png')] bg-cover bg-center" />
+          </Link>
+          <Link href={{ pathname: '/article/3' }} locale={currentLocal} passHref>
+            <div className="h-[237px] w-full bg-[url('/images/home/banner-3.png')] bg-cover bg-center" />
+          </Link>
+          <Link href={{ pathname: '/article/4' }} locale={currentLocal} passHref>
+            <div className="h-[237px] w-full bg-[url('/images/home/banner-4.png')] bg-cover bg-center" />
+          </Link>
         </Slider>
         <p className="mt-5 mb-3.5 font-semibold text-lg text-[#E5E5E5] text-center">
           {t('gallery-button')}
