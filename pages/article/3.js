@@ -30,7 +30,7 @@ export default function BannerArticle3() {
         <article
           className="
           max-w-5xl mt-24 pb-28 mx-auto
-          sm:px-8 sm:mt-8
+          sm:px-8 sm:pb-14 sm:mt-8
         ">
           <h1 className="article-heading">{t('heading')}</h1>
           <p className="article-p">{t('p1')}</p>

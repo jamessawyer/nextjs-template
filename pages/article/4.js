@@ -34,7 +34,7 @@ export default function BannerArticle4() {
         <article
           className="
           max-w-5xl mt-24 pb-28 mx-auto
-          sm:px-8 sm:mt-8
+          sm:px-8 sm:pb-14 sm:mt-8
         ">
           <h1 className="article-heading">{t('heading-1')}</h1>
           <div
@@ -77,14 +77,22 @@ export default function BannerArticle4() {
           <p className="article-p">{t('p8')}</p>
           <h3 className="text-[#DD4247]">{t('header-sub-4')}</h3>
           <p className="article-p indent-5">{t('p9')}</p>
-          <div className="relative w-[334px] mt-8 mx-auto">
+          <div
+            className="
+            relative w-[334px] mt-8 mx-auto
+            sm:w-full
+            ">
             <Image src={Article4D} alt="" />
           </div>
           <p className="article-p">{t('p10')}</p>
           <p className="article-p indent-5">{t('p11')}</p>
           <h3 className="text-[#DD4247]">{t('header-sub-5')}</h3>
           <p className="article-p indent-5">{t('p12')}</p>
-          <div className="relative w-[241px] mt-8 mb-10 mx-auto">
+          <div
+            className="
+            relative w-[241px] mt-8 mb-10 mx-auto
+            sm:w-full
+            ">
             <Image src={Article4E} alt="" />
           </div>
 

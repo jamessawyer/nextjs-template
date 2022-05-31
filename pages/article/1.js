@@ -12,19 +12,31 @@ export default function BannerArticle1() {
   return (
     <ArticleLayout>
       <section>
-        <div className="relative h-139 w-full overflow-hidden">
+        <div className="relative h-139 w-full overflow-hidden sm:h-36">
           <Image src={Banner1} layout="fill" alt="" />
         </div>
-        <article className="max-w-5xl mt-24 pb-28 mx-auto">
+        <article
+          className="
+          max-w-5xl mt-24 pb-28 mx-auto
+          sm:px-8 sm:pb-14 sm:mt-8
+          ">
           <h1 className="article-heading">{t('heading')}</h1>
           <p className="article-p my-7">{t('p1')}</p>
-          <div className="relative h-[286px] flex flex-row gap-x-6">
+          <div
+            className="
+            relative h-[286px] flex flex-row gap-x-6
+            sm:flex-col sm:gap-x-0 sm:gap-y-4 sm:w-full sm:h-auto
+          ">
             <Image src={Article1A} alt="" />
             <Image src={Article1B} alt="" />
           </div>
           <p className="article-p my-7">{t('p2')}</p>
           <p className="article-p my-7">{t('p3')}</p>
-          <div className="relative w-[850px] h-[249px]">
+          <div
+            className="
+            relative w-[850px] h-[249px]
+            sm:w-full h-auto
+            ">
             <Image src={Article1C} alt="" />
           </div>
           <p className="article-p my-7">{t('p4')}</p>
