@@ -35,7 +35,7 @@ export default function BannerArticle1() {
           <div
             className="
             relative w-[850px] h-[249px]
-            sm:w-full h-auto
+            sm:w-full sm:h-auto
             ">
             <Image src={Article1C} alt="" />
           </div>
