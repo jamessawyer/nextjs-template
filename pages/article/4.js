@@ -28,46 +28,62 @@ export default function BannerArticle4() {
   return (
     <ArticleLayout>
       <section>
-        <div className="relative h-139 w-full overflow-hidden">
+        <div className="relative h-139 w-full overflow-hidden sm:h-36">
           <Image src={Banner4} layout="fill" alt="" />
         </div>
-        <article className="max-w-5xl mt-24 pb-28 mx-auto">
+        <article
+          className="
+          max-w-5xl mt-24 pb-28 mx-auto
+          sm:px-8 sm:mt-8
+        ">
           <h1 className="article-heading">{t('heading-1')}</h1>
-          <div className="relative w-[540px] h-[167px] mt-8 mb-10">
+          <div
+            className="
+            relative w-[540px] h-[167px] mt-8 mb-10 
+            sm:w-full sm:h-auto sm:mb-4 sm:mt-4
+          ">
             <Image src={Article4A} alt="" />
           </div>
-          <p className="article-p my-7">{t('p1')}</p>
-          <p className="article-p my-7">{t('p2')}</p>
-          <p className="article-p my-7">{t('p3')}</p>
+          <p className="article-p">{t('p1')}</p>
+          <p className="article-p">{t('p2')}</p>
+          <p className="article-p">{t('p3')}</p>
 
           {/* 主要任务 */}
           <h2 className="article-header-main">{t('header-main-1')}</h2>
-          <p className="article-p my-7">{t('p4')}</p>
+          <p className="article-p">{t('p4')}</p>
 
           {/* 算法简介 */}
           <h2 className="article-header-main">{t('header-main-2')}</h2>
           <h3 className="text-[#DD4247] mt-7">{t('header-sub-1')}</h3>
-          <p className="article-p my-7">{t('p5')}</p>
+          <p className="article-p">{t('p5')}</p>
           <h3 className="text-[#DD4247]">{t('header-sub-2')}</h3>
-          <p className="article-p my-7">{t('p6')}</p>
-          <div className="relative w-[365px] mt-8 mb-10 mx-auto">
+          <p className="article-p">{t('p6')}</p>
+          <div
+            className="
+            relative w-[365px] mt-8 mb-10 mx-auto
+            sm:w-full
+          ">
             <Image src={LAYER_IMAGE[currentLocal]} alt="" />
           </div>
           <h3 className="text-[#DD4247]">{t('header-sub-3')}</h3>
-          <p className="article-p my-7">{t('p7')}</p>
-          <div className="relative w-[298px] mt-8 mb-10 mx-auto">
+          <p className="article-p">{t('p7')}</p>
+          <div
+            className="
+            relative w-[298px] mt-8 mb-10 mx-auto
+            sm:w-full
+            ">
             <Image src={Article4C} alt="" />
           </div>
-          <p className="article-p my-7">{t('p8')}</p>
+          <p className="article-p">{t('p8')}</p>
           <h3 className="text-[#DD4247]">{t('header-sub-4')}</h3>
-          <p className="article-p indent-5 my-7">{t('p9')}</p>
+          <p className="article-p indent-5">{t('p9')}</p>
           <div className="relative w-[334px] mt-8 mx-auto">
             <Image src={Article4D} alt="" />
           </div>
-          <p className="article-p my-7">{t('p10')}</p>
-          <p className="article-p indent-5 my-7">{t('p11')}</p>
+          <p className="article-p">{t('p10')}</p>
+          <p className="article-p indent-5">{t('p11')}</p>
           <h3 className="text-[#DD4247]">{t('header-sub-5')}</h3>
-          <p className="article-p indent-5 my-7">{t('p12')}</p>
+          <p className="article-p indent-5">{t('p12')}</p>
           <div className="relative w-[241px] mt-8 mb-10 mx-auto">
             <Image src={Article4E} alt="" />
           </div>
@@ -78,12 +94,16 @@ export default function BannerArticle4() {
 
           {/* Island King 	测试方案及指标 */}
           <h1 className="article-heading">{t('heading-1')}</h1>
-          <p className="article-p my-7">{t('p14')}</p>
-          <p className="article-p my-7">{t('p15')}</p>
-          <div className="relative w-[620px] mt-8 mb-10 mx-auto">
+          <p className="article-p">{t('p14')}</p>
+          <p className="article-p">{t('p15')}</p>
+          <div
+            className="
+            relative w-[620px] mt-8 mb-10 mx-auto
+            sm:w-full
+            ">
             <Image src={PACKAGE_RATE[currentLocal]} alt="" />
           </div>
-          <p className="article-p my-7">{t('p16')}</p>
+          <p className="article-p">{t('p16')}</p>
         </article>
       </section>
     </ArticleLayout>

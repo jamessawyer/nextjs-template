@@ -11,7 +11,7 @@
     @apply text-3xl font-medium text-[#263238];
   }
   .article-p {
-    @apply text-lg text-justify font-normal leading-relaxed text-[#263238];
+    @apply text-lg text-justify font-normal leading-relaxed text-[#263238] my-7;
   }
   .article-header-main {
     @apply text-xl font-medium text-[#2b5588];
@@ -85,5 +85,20 @@ html {
   #news,
   #domain {
     scroll-margin-top: 164px;
+  }
+}
+
+@media screen(sm) {
+  .article-heading {
+    @apply text-2xl font-medium text-[#263238];
+  }
+  .article-p {
+    @apply text-sm text-justify font-normal leading-relaxed text-[#263238] my-4;
+  }
+  .article-header-main {
+    @apply text-lg font-medium text-[#2b5588];
+  }
+  .article-header-sub {
+    @apply text-base font-normal text-[#2b5588];
   }
 }
