@@ -85,6 +85,7 @@ export default function BannerArticle3() {
           <div className="relative mt-8 mb-10 mx-auto">
             <Image src={Article3Formula6} alt="" />
           </div>
+          <div className="article-p" dangerouslySetInnerHTML={{ __html: t.raw('p13') }} />
           <p className="article-p">{t('p14')}</p>
         </article>
       </section>
