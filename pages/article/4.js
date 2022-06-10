@@ -5,20 +5,24 @@ import ArticleLayout from '@/components/ArticleLayout'
 import Banner4 from '../../public/images/home/banner-4.png'
 import Article4A from '../../public/images/article/article4-a.png'
 import Article4BCN from '../../public/images/article/article4-b-cn.png'
+import Article4BEN from '../../public/images/article/article4-b-en.jpg'
+import Article4BJP from '../../public/images/article/article4-b-jp.jpg'
 import Article4C from '../../public/images/article/article4-c.png'
 import Article4D from '../../public/images/article/article4-d.png'
 import Article4E from '../../public/images/article/article4-e.png'
 import Article4FCN from '../../public/images/article/article4-f-cn.jpg'
+import Article4FEN from '../../public/images/article/article4-f-en.jpg'
+import Article4FJP from '../../public/images/article/article4-f-jp.jpg'
 
 const LAYER_IMAGE = {
   zh: Article4BCN,
-  en: Article4BCN,
-  jp: Article4BCN,
+  en: Article4BEN,
+  jp: Article4BJP,
 }
 const PACKAGE_RATE = {
   zh: Article4FCN,
-  en: Article4FCN,
-  jp: Article4FCN,
+  en: Article4FEN,
+  jp: Article4FJP,
 }
 
 export default function BannerArticle4() {

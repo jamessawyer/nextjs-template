@@ -4,6 +4,8 @@ import { useRouter } from 'next/router'
 import ArticleLayout from '@/components/ArticleLayout'
 import Banner3 from '../../public/images/home/banner-3.png'
 import Article3ACN from '../../public/images/article/article3-a-cn.png'
+import Article3AEN from '../../public/images/article/article3-a-en.jpg'
+import Article3AJP from '../../public/images/article/article3-a-jp.jpg'
 import Article3Formula1 from '../../public/images/article/article3-formula-1.png'
 import Article3Formula2 from '../../public/images/article/article3-formula-2.png'
 import Article3Formula3 from '../../public/images/article/article3-formula-3.png'
@@ -13,8 +15,8 @@ import Article3Formula6 from '../../public/images/article/article3-formula-6.png
 
 const MODEL_IMAGE = {
   zh: Article3ACN,
-  en: Article3ACN,
-  jp: Article3ACN,
+  en: Article3AEN,
+  jp: Article3AJP,
 }
 
 export default function BannerArticle3() {
