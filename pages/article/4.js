@@ -100,10 +100,15 @@ export default function BannerArticle4() {
           <h2 className="article-header-main">{t('header-main-3')}</h2>
           <p className="article-p mt-7 mb-14">{t('p13')}</p>
 
-          {/* Island King 	测试方案及指标 */}
-          <h1 className="article-heading">{t('heading-1')}</h1>
+          <h2 className="article-header-main">{t('header-main-4')}</h2>
           <p className="article-p">{t('p14')}</p>
+          <p className="article-p mt-[-0.75rem] mb-[0.75rem]">{t('p18')}</p>
+          <p className="article-p mt-[0.75rem]">{t('p19')}</p>
+
+          {/* Island King 	测试方案及指标 */}
+          <h1 className="article-heading">{t('heading-2')}</h1>
           <p className="article-p">{t('p15')}</p>
+          <p className="article-p">{t('p16')}</p>
           <div
             className="
             relative w-[620px] mt-8 mb-10 mx-auto
@@ -111,7 +116,7 @@ export default function BannerArticle4() {
             ">
             <Image src={PACKAGE_RATE[currentLocal]} alt="" />
           </div>
-          <p className="article-p">{t('p16')}</p>
+          <p className="article-p">{t('p17')}</p>
         </article>
       </section>
     </ArticleLayout>
