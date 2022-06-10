@@ -91,7 +91,7 @@ function Footer() {
             sm:origin-top-left
             sm:scale-90
             ">
-            027-8888 8888
+            027-8754 1941
           </h2>
           <button
             type="button"

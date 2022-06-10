@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { memo, useEffect, useState } from 'react'
 import { HEADER_LOGOS, LANGS } from '../constants'
-import useStore, { selectToggleOpen } from '@/utils/useStore'
 
 function ArticleNavigation() {
   const t = useTranslations('Navigation')
@@ -25,8 +24,6 @@ function ArticleNavigation() {
     setIsOpen(!isOpen)
   }
 
-  const toggleOpen = useStore(selectToggleOpen)
-
   return (
     <header>
       <section className="sticky top-0 left-0 right-0 z-10 sm:hidden">
@@ -40,16 +37,6 @@ function ArticleNavigation() {
 
           <nav>
             <ul className="flex cursor-pointer flex-row items-center justify-between">
-              <li
-                className="
-                nav-text relative px-9 py-10 2xl:px-8
-                after:content-[''] after:h-5 after:w-px after:bg-[#D9E0E6] after:opacity-30
-                after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2
-                ">
-                <button type="button" onClick={toggleOpen} className="opacity-80 hover:opacity-100">
-                  {t('apply')}
-                </button>
-              </li>
               <li className="nav-text group relative py-10 pl-9 2xl:pl-8">
                 <div className="flex flex-row items-center justify-between gap-x-7 opacity-80 hover:opacity-100">
                   <span>{t('lang')}</span>
