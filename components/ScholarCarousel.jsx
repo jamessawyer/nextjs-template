@@ -157,13 +157,13 @@ function Scholar({ name, title, honors, avatar, onClick }) {
           ">
           <span
             className="
-            text-4xl tracking-wider
+            text-3xl tracking-wider
 
             sm:text-xl
             ">
             {t(name)}
           </span>
-          <span className="text-2xl sm:text-xs">{t(title)}</span>
+          <span className="text-xl sm:text-xs">{t(title)}</span>
         </div>
         <div
           className="

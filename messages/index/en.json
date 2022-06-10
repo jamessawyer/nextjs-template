@@ -34,59 +34,59 @@
     "title": "HUST AI II Researcher",
     "subtitle": "At present, the innovation center has gathered a large number of elites and scholars in the field of artificial intelligence, and has 10 core scientists",
     "scholar1": {
-      "name": "朱明",
-      "title": "教授、主任",
-      "honors": "<p>华中科技大学教授/博导，国家工程实验室副主任</p><p>2008 年获华中科技大学通信工程博士学位</p><p>2014 年美国西北大学公派访问学者,师从 Richard M. Lueptow 教授</p><p>已发表顶级国际会议与杂志论文 12 篇</p>"
+      "name": "Ming Zhu",
+      "title": "Professor, Director",
+      "honors": "<p>Professor/Ph.D. supervisor at HUST, Deputy Director of National Engineering Laboratory</p><p>Get a PhD degree in Communication Engineering of HUST in 2008</p><p>2014 Visiting Scholar, Northwestern University, USA, under the supervision of Prof. Richard M. Lueptow</p><p>Published 12 papers in top international conferences and journals</p>"
     },
     "scholar2": {
-      "name": "袁泉",
-      "title": "高级研究员",
-      "honors": "<p>15 年来一直从事数据分析和人工智能研究工作</p><p>师从国际电子电气协会院士 IEEE Fellow： Eyad Abed 教授</p><p>在国际顶级期刊发表 SCI 论文 13 篇，主持国内 外科学基金 10 余项</p><p>2010 年，获得华中科技大学与美国马里兰大学 联合培养博士学位</p>"
+      "name": "Quan Yuan",
+      "title": "Senior Researcher",
+      "honors": "<p>15 years of research in data analysis and artificial intelligence</p><p>Under the supervision of Prof. Eyad Abed, IEEE Fellow</p><p>Published 13 SCI papers in top international journals and hosted more than 10 scientific grants in China and abroad.</p><p>In 2010, Received his PhD degree from HUST and the University of Maryland, USA.</p>"
     },
     "scholar3": {
-      "name": "汤庆",
-      "title": "高级研究员",
-      "honors": "<p>Santiago de Compostela大学博士</p><p>罗马大学La Sapienza 访问学者</p><p>意大利罗马大学 La Sapienza 访问学者</p><p>新加坡管理大学访问学者</p><p>研究领域：博弈论，运筹学与金融模型</p>"
+      "name": "Qing Tang",
+      "title": "Senior Researcher",
+      "honors": "<p>Ph.d of Santiago de Compostela</p><p>Visiting Scholar, La Sapienza, University of Rome</p><p>Visiting Scholar, Singapore Management University</p><p>Research areas: game theory, operations research and financial modeling</p>"
     },
     "scholar4": {
-      "name": "程卓",
-      "title": "教授",
-      "honors": "<p>2010年获华中科技大学通信工程博士学位</p><p>美国佛罗里达州立大学访问学者</p><p>主持研发人工智能、机器学习方向，荣获国家自然科学基金800余万元</p>"
+      "name": "Zhuo Chen",
+      "title": "Professor",
+      "honors": "<p>2010 PhD in Communication Engineering from HUST</p><p>Visiting scholar at Florida State University, USA</p><p>charge of research and development of artificial intelligence and machine learning, and has been awarded more than 8 million RMB by the National Natural Science Foundation of China</p>"
     },
     "scholar5": {
-      "name": "郭鹏",
-      "title": "教授",
-      "honors": "<p>华中科技大学教授，曾在香港科技大学和香港理工大学从事博士后研究</p><p>2011年入选国家首批香江学者</p><p>2016年获全国首届工业4.0智能制造创新创业大赛一等奖</p>"
+      "name": "Peng Guo",
+      "title": "Professor",
+      "honors": "<p>Professor at HUST, postdoctoral research at HKUST and HKPU</p><p>In 2011, selected as one of the first batch of National Heung Kong Scholars</p><p>First Prize of the First National Industry 4.0 Smart Manufacturing Innovation and Entrepreneurship Competition in 2016</p>"
     },
     "scholar6": {
-      "name": "徐文波",
-      "title": "高级研究员",
-      "honors": "<p>华中科技大学信息与信号处理理专业博士后</p><p>研究⽅向：通信技术，信息与信号处理，深度学习，基于压缩感知的⼤动态信号低速采样技术</p>"
+      "name": "WenBo Xu",
+      "title": "Senior Researcher",
+      "honors": "<p>Postdoctoral Fellow in Information and Signal Processing of HUST</p><p>Research Interests: Communication technology, information and signal processing, deep learning, low-speed sampling techniques based on compressed sensing of large dynamic signals</p>"
     },
     "scholar7": {
-      "name": "陈建文",
-      "title": "高级研究员",
-      "honors": "<p>华中科技大学电子信息与通讯学院教授，</p><p>研究方向为多模态机器学习与知识图谱理论</p>"
+      "name": "JianWen Chen",
+      "title": "Senior Researcher",
+      "honors": "<p>Professor, School of Electronic Information and Communication of HUST</p><p>Research interests are multimodal machine learning and knowledge graph theory</p>"
     },
     "scholar8": {
-      "name": "刘威",
-      "title": "教授",
-      "honors": "<p>华中科技大学电子信息与通信学院教授，IEEE通信分会会员,中国电子学会会员，中国通信学会会员，中国计算机学会会员</p><p>主持在研国家自然科学基金项目“移动内容中心 网络关键技术研究”</p>"
+      "name": "Wei Liu",
+      "title": "Professor",
+      "honors": "<p>Professor of School of Electronic Information and Communication, HUST, Member of IEEE Communications Section, Member of Chinese Institute of Electronics, Member of Chinese Society of Communication, Member of Chinese Computer Society</p><p>Leading the National Natural Science Foundation of China (NSFC) project \"Research on Key Technologies of Mobile Content Center Network\"</p>"
     },
     "scholar9": {
-      "name": "鄢舒",
-      "title": "高级研究员",
-      "honors": "<p>华中科技大学通信工程博士学位</p><p>英国谢菲尔德大学公开访问学者</p><p>专注在压缩感知、智能信号处理、机器学习、 嵌入式和 DSP 系统等</p>"
+      "name": "Shu Yan",
+      "title": "Senior Researcher",
+      "honors": "<p>PhD in Communication Engineering, HUST</p><p>Open Access Scholar, University of Sheffield, UK</p><p>Specialized in compressed sensing, intelligent signal processing, machine learning, embedded and DSP systems, etc.</p>"
     },
     "scholar10": {
       "name": "Eyad Abed",
-      "title": "创新中心顾问",
-      "honors": "<p>美国马里兰大学教授,博导,国际电 子电气协会院士（IEEE）院士</p><p>美国自然科学基金会高级主任</p>"
+      "title": "Innovation Center Consultant",
+      "honors": "Professor, Ph.D., University of Maryland, USA; Fellow of the IEEE</p><p>Senior Director, American Natural Science Foundation</p>"
     },
     "scholar12": {
       "name": "Sheldon Lee Glashow",
-      "title": "创新中心顾问",
-      "honors": "<p>世界著名理论物理学家，粒子物理标 准模型奠基人之一</p><p>美国科学院院士</p><p>1979年诺贝尔物理学奖获得者</p><p>1976年获奥本海默奖</p>"
+      "title": "Innovation Center Consultant",
+      "honors": "<p>World-renowned theoretical physicist, one of the founders of the standard model of particle physics</p><p>Member of the American Academy of Sciences</p><p>1979 Nobel Laureate in Physics</p><p>1976 Oppenheimer Prize</p>"
     }
   }
 }
